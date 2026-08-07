@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="ru" class="h-100">
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<meta property="og:site_name" content="ГУАП"/>
+	<meta property="og:url" content="https://guap.ru/rasp"/>
+	<meta property="og:type" content="website"/>
+	<title>Расписание занятий – ГУАП</title>
+
+	<link href="https://src.guap.ru/themes/guap6/dist/theme.min.css?20260521_01" rel="stylesheet" />
+
+			<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function (m, e, t, r, i, k, a) {
+			m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+			m[i].l = 1 * new Date();
+			for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+			k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+		})
+			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+		ym(86883871, "init", {
+			clickmap: true,
+			trackLinks: true,
+			accurateTrackBounce: true
+		});
+	</script>
+	<noscript>
+		<div><img src="https://mc.yandex.ru/watch/86883871" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
+	<!-- /Yandex.Metrika counter -->
+
+			<!-- Top.Mail.Ru counter -->
+	<script type="text/javascript">
+		var _tmr = window._tmr || (window._tmr = []);
+		_tmr.push({id: "3604540", type: "pageView", start: (new Date()).getTime()});
+		(function (d, w, id) {
+			if (d.getElementById(id)) return;
+			var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+			ts.src = "https://top-fwz1.mail.ru/js/code.js";
+			var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+			if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+		})(document, window, "tmr-code");
+	</script>
+	<noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3604540;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript>
+	<!-- /Top.Mail.Ru counter -->
+
+
+	
+
+    <script src="https://src.guap.ru/libs/ovz/jquery.js"></script>
+    <script src="https://src.guap.ru/libs/ovz/uhpv-full.min.js"></script>
+</head>
+
+<body class="d-flex flex-column h-100">
+	<span id="totop" onclick="themeToTop();"><i class="bi-chevron-up"></i></span>
+
+	
+    <div class="offcanvas offcanvas-bottom h-auto border-3" style="background-color:#f0f6fb;" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="notificationCookies" aria-labelledby="notificationCookiesLabel">
+        <div class="container fs-9 py-3">
+            <div class="offcanvas-header py-1">
+                <h5 class="offcanvas-title" id="notificationCookiesLabel">Уведомление об использовании Cookie</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body py-1">
+                <p>
+                    Официальный сайт ГУАП (guap.ru) использует файлы cookie и&nbsp;сервисы сбора технических данных посетителей. Продолжение пользования сайтом является согласием на&nbsp;применение данных технологий. Дополнительная информация <a target="_blank" href="/sveden/site/opd">об использовании персональных данных на сайте ГУАП</a>.
+                </p>
+                <p>
+                    <a class="btn btn-secondary btn-sm" href="#" onclick="ansSetCookie('notification_cookies','true');location.reload();return false;">Принять</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const notificationCookies1 = new bootstrap.Offcanvas('#notificationCookies');
+            notificationCookies1.show();
+        });        
+    </script>
+
+
+	
+	
+
+
+		
+<style>
+	.nav-quick {
+		--bs-nav-link-padding-x: .5rem;
+		--bs-nav-link-padding-y: 0;
+	}
+</style>
+			
+<header id="site_header" class="py-2" style="background-color:#eee;">
+	<div class="container">
+		<div class="d-flex align-items-center">
+			
+			<a href="/"><img class="logo" style="max-height: 3rem;" src="https://src.guap.ru/logos/guap/guap_85.svg" alt="ГУАП" /></a>
+
+			<ul class="nav nav-quick ms-auto">
+				<li class="nav-item" id="specialButton"><a class="nav-link" href=""><i class="bi-eye" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ"></i></a></li>
+				<li class="nav-item"><a class="nav-link" href="/sitemap"><i class="bi-diagram-3"></i></a></li>
+				<li class="nav-item"><a class="nav-link" href="/search"><i class="bi-search"></i></a></li>
+			</ul>
+
+		</div>
+	</div>
+</header>
+	<main role="main">
+			<div class="container">
+						<nav id="breadcrumb" class="my-3" aria-label="breadcrumb">
+		<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="https://guap.ru">ГУАП</a></li>
+			<li class="breadcrumb-item active opacity-50" aria-current="page">
+				Расписание занятий
+			</li>
+		</ol>
+	</nav>
+
+					<h1 class="my-4">Расписание занятий</h1>
+			</div>
+		
+		<div class="container content mb-5">
+			
+
+
+
+
+<style>
+    @media print {
+        body {
+            overflow: visible !important;
+        }
+    }
+
+    .week1 {
+        color: red;
+    }
+
+    .week2 {
+        color: blue;
+    }
+</style>
+
+<div class="text-end mb-3 small opacity-75">Вид: <b>расширенный</b> | <a href="/rasp_sm">компактный</a></div>
+
+<div class="row mb-3">
+    <div class="col-12 col-md-6">
+        <p class="lead text-success lh-sm">
+            Осенний семестр
+            2026/27&nbsp;учебного&nbsp;года<br />
+            <small>(сборка: 2026-03-23)</small>
+        </p>
+    </div>
+    <div class="col-12 col-md-6 d-print-none">
+        <div class="alert alert-light">
+            Сегодня <nobr>&#x441;&#x443;&#x431;&#x431;&#x43E;&#x442;&#x430;, 8 &#x430;&#x432;&#x433;&#x443;&#x441;&#x442;&#x430; 2026 &#x433;.</nobr><br />
+            <span class="week1">▲&nbsp;49&nbsp;верхняя (нечетная) неделя</span>
+        </div>
+    </div>
+</div>
+
+
+
+    <div class="my-3 d-flex flex-wrap align-items-center gap-3">
+        <button class="btn btn-outline-secondary btn-sm d-print-none" type="button" onclick="toForm();">Новый поиск</button>
+        <div id="result" class="opacity-50">Фильтр: гр. 8423к</div>
+    </div>
+        <h4 class="text-danger border-bottom border-danger border-2 px-0 py-2 my-5">Вне сетки расписания</h4>
+            <div class="mb-3 py-2 d-flex gap-2">
+                <div class="">&nbsp;</div>
+                <div>
+                    <div class="fs-6 lh-sm opacity-50">Курсовая работа</div>
+                    <div class="lead lh-sm">Менеджмент</div>
+                    <div class="opacity-75">
+                        ауд. <a href="?ad=37">&nbsp;(вне сетки)</a>
+                        —&nbsp;<a href="?ch=2">Кафедра 82</a><br />
+                        
+                        гр:&nbsp;<a class="" href="?gr=7147">8423к</a>
+                    </div>
+                </div>
+            </div>
+        <h4 class="text-danger border-bottom border-danger border-2 px-0 py-2 my-5">Понедельник</h4>
+            <div class="mt-3 text-danger">1 пара <small class="opacity-50">(9:30—11:00)</small></div>
+            <div class="mb-3 py-2 d-flex gap-2">
+                <div class="week1" style="font-size:1.4rem;" title="верхняя (нечетная) неделя">▲</div>
+                <div>
+                    <div class="fs-6 lh-sm opacity-50">Лекция</div>
+                    <div class="lead lh-sm">Финансовые рынки и институты</div>
+                    <div class="opacity-75">
+                        ауд. <a href="?ad=25">22-07&nbsp;(Ленсовета 14)</a>
+                        —&nbsp;<a href="?ch=2">Кафедра 82</a><br />
+                        преп:&nbsp;<a class="" href="?pr=38788">Сироткин В.Б., профессор, д-р экон. наук, профессор</a>.&nbsp;&nbsp;
+                        гр:&nbsp;<a class="" href="?gr=7147">8423к</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3 text-danger">2 пара <small class="opacity-50">(11:10—12:40)</small></div>
+            <div class="mb-3 py-2 d-flex gap-2">
+                <div class="week1" style="font-size:1.4rem;" title="верхняя (нечетная) неделя">▲</div>
+                <div>
+                    <div class="fs-6 lh-sm opacity-50">Лекция</div>
+                    <div class="lead lh-sm">Финансовые рынки и институты</div>
+                    <div class="opacity-75">
+                        ауд. <a href="?ad=25">22-07&nbsp;(Ленсовета 14)</a>
+                        —&nbsp;<a href="?ch=2">Кафедра 82</a><br />
+                        преп:&nbsp;<a class="" href="?pr=38788">Сироткин В.Б., профессор, д-р экон. наук, профессор</a>.&nbsp;&nbsp;
+                        гр:&nbsp;<a class="" href="?gr=7147">8423к</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3 text-danger">3 пара <small class="opacity-50">(13:00—14:30)</small></div>
+            <div class="mb-3 py-2 d-flex gap-2">
+                <div class="">&nbsp;</div>
+                <div>
+                    <div class="fs-6 lh-sm opacity-50">Практическое занятие </div>
+                    <div class="lead lh-sm">Прикладная физическая культура (элективный модуль)</div>
+                    <div class="opacity-75">
+                        ауд. <a href="?ad=157">спортзал&nbsp;(Ленсовета 14)</a>
+                        —&nbsp;<a href="?ch=15">Кафедра 64</a><br />
+                        преп:&nbsp;<a class="" href="?pr=39127">Журавлев А.А., старший преподаватель</a>.&nbsp;&nbsp;
+                        гр:&nbsp;<a class="" href="?gr=7149">8421к</a>, <a class="" href="?gr=7147">8423к</a>, <a class="" href="?gr=7144">8426</a>, <a class="" href="?gr=7145">8427</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3 text-danger">4 пара <small class="opacity-50">(15:10—16:40)</small></div>
+            <div class="mb-3 py-2 d-flex gap-2">
+                <div class="">&nbsp;</div>
+                <div>
+                    <div class="fs-6 lh-sm opacity-50">Практическое занятие </div>
+                    <div class="lead lh-sm">Интернет-маркетинг</div>
+                    <div class="opacity-75">
+                        ауд. <a href="?ad=142">14-10&nbsp;(Ленсовета 14)</a>
+                        —&nbsp;<a href="?ch=2">Кафедра 82</a><br />
+                        преп:&nbsp;<a class="" href="?pr=3656">Рудаков М.А., ассистент</a>.&nbsp;&nbsp;
+                        гр:&nbsp;<a class="" href="?gr=7147">8423к</a>
+                    </div>
+                </div>
+            </div>
+        <h4 class="text-danger border-bottom border-danger border-2 px-0 py-2 my-5">Вторник</h4>
+            <div class="mt-3 text-danger">1 пара <small class="opacity-50">(9:30—11:00)</small></div>
+            <div class="mb-3 py-2 d-flex gap-2">
+                <div class="">&nbsp;</div>
+                <div>
+                    <div class="fs-6 lh-sm opacity-50">Лекция</div>
+                    <div class="lead lh-sm">Менеджмент</div>
+                    <div class="opacity-75">
+                        ауд. <a href="?ad=72">13-07&nbsp;(Ленсовета 14)</a>
+                        —&nbsp;<a href="?ch=2">Кафедра 82</a><br />
+                        преп:&nbsp;<a class="" href="?pr=2352">Макаренко Е.А., доцент, канд. экон. наук, доцент</a>.&nbsp;&nbsp;
+                        гр:&nbsp;<a class="" href="?gr=7147">8423к</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3 text-danger">2 пара <small class="opacity-50">(11:10—12:40)</small></div>
+            <div class="mb-3 py-2 d-flex gap-2">
+                <div class="">&nbsp;</div>
+                <div>
+                    <div class="fs-6 lh-sm opacity-50">Лекция</div>
+                    <div class="lead lh-sm">Бухгалтерский учет</div>
+                    <div class="opacity-75">
+                        ауд. <a href="?ad=23">23-12&nbsp;(Ленсовета 14)</a>
+                        —&nbsp;<a href="?ch=7">Кафедра 81</a><br />
+                        преп:&nbsp;<a class="" href="?pr=39880">Романова И.В., заведующий кафедрой, канд. экон. наук, доцент</a>.&nbsp;&nbsp;
+                        гр:&nbsp;<a class="" href="?gr=7139">8411к</a>, <a class="" href="?gr=7143">8416к</a>, <a class="" href="?gr=7147">8423к</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3 text-danger">3 пара <small class="opacity-50">(13:00—14:30)</small></div>
+            <div class="mb-3 py-2 d-flex gap-2">
+                <div class="week1" style="font-size:1.4rem;" title="верхняя (нечетная) неделя">▲</div>
+                <div>
+                    <div class="fs-6 lh-sm opacity-50">Практическое занятие </div>
+                    <div class="lead lh-sm">Бухгалтерский учет</div>
+                    <div class="opacity-75">
+                        ауд. <a href="?ad=23">23-12&nbsp;(Ленсовета 14)</a>
+                        —&nbsp;<a href="?ch=7">Кафедра 81</a><br />
+                        преп:&nbsp;<a class="" href="?pr=39504">Золотухина Н.О., старший преподаватель</a>.&nbsp;&nbsp;
+                        гр:&nbsp;<a class="" href="?gr=7147">8423к</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3 py-2 d-flex gap-2">
+                <div class="week2" style="font-size:1.4rem;" title="нижняя (четная) неделя">▼</div>
+                <div>
+                    <div class="fs-6 lh-sm opacity-50">Практическое занятие </div>
+                    <div class="lead lh-sm">Менеджмент</div>
+                    <div class="opacity-75">
+                        ауд. <a href="?ad=134">21-04&nbsp;(Ленсовета 14)</a>
+                        —&nbsp;<a href="?ch=2">Кафедра 82</a><br />
+                        преп:&nbsp;<a class="" href="?pr=2352">Макаренко Е.А., доцент, канд. экон. наук, доцент</a>.&nbsp;&nbsp;
+                        гр:&nbsp;<a class="" href="?gr=7147">8423к</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3 text-danger">4 пара <small class="opacity-50">(15:10—16:40)</small></div>
+            <div class="mb-3 py-2 d-flex gap-2">
+                <div class="week1" style="font-size:1.4rem;" title="верхняя (нечетная) неделя">▲</div>
+                <div>
+                    <div class="fs-6 lh-sm opacity-50">Лекция</div>
+                    <div class="lead lh-sm">Разработка программного обеспечения</div>
+                    <div class="opacity-75">
+                        ауд. <a href="?ad=24">22-04&nbsp;(Ленсовета 14)</a>
+                        —&nbsp;<a href="?ch=2">Кафедра 82</a><br />
+                        преп:&nbsp;<a class="" href="?pr=39215">Черепков Е.В., доцент, канд. экон. наук, доцент</a>.&nbsp;&nbsp;
+                        гр:&nbsp;<a class="" href="?gr=7147">8423к</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3 py-2 d-flex gap-2">
+                <div class="week2" style="font-size:1.4rem;" title="нижняя (четная) неделя">▼</div>
+                <div>
+                    <div class="fs-6 lh-sm opacity-50">Лекция</div>
+                    <div class="lead lh-sm">Разработка программного обеспечения</div>
+                    <div class="opacity-75">
+                        ауд. <a href="?ad=25">22-07&nbsp;(Ленсовета 14)</a>
+                        —&nbsp;<a href="?ch=2">Кафедра 82</a><br />
+                        преп:&nbsp;<a class="" href="?pr=39215">Черепков Е.В., доцент, канд. экон. наук, доцент</a>.&nbsp;&nbsp;
+                        гр:&nbsp;<a class="" href="?gr=7147">8423к</a>
+                    </div>
+                </div>
+            </div>
+        <h4 class="text-danger border-bottom border-danger border-2 px-0 py-2 my-5">Среда</h4>
+            <div class="mt-3 text-danger">4 пара <small class="opacity-50">(15:10—16:40)</small></div>
+            <div class="mb-3 py-2 d-flex gap-2">
+                <div class="week2" style="font-size:1.4rem;" title="нижняя (четная) неделя">▼</div>
+                <div>
+                    <div class="fs-6 lh-sm opacity-50">Лекция</div>
+                    <div class="lead lh-sm">Интернет-маркетинг</div>
+                    <div class="opacity-75">
+                        ауд. <a href="?ad=27">22-09&nbsp;(Ленсовета 14)</a>
+                        —&nbsp;<a href="?ch=2">Кафедра 82</a><br />
+                        преп:&nbsp;<a class="" href="?pr=39933">Рудакова Л.В., доцент, канд. экон. наук, доцент</a>.&nbsp;&nbsp;
+                        гр:&nbsp;<a class="" href="?gr=7139">8411к</a>, <a class="" href="?gr=7143">8416к</a>, <a class="" href="?gr=7141">8418к</a>, <a class="" href="?gr=7149">8421к</a>, <a class="" href="?gr=7147">8423к</a>, <a class="" href="?gr=7156">8433к</a>
+                    </div>
+                </div>
+            </div>
+        <h4 class="text-danger border-bottom border-danger border-2 px-0 py-2 my-5">Четверг</h4>
+            <div class="mt-3 text-danger">1 пара <small class="opacity-50">(9:30—11:00)</small></div>
+            <div class="mb-3 py-2 d-flex gap-2">
+                <div class="week1" style="font-size:1.4rem;" title="верхняя (нечетная) неделя">▲</div>
+                <div>
+                    <div class="fs-6 lh-sm opacity-50">Практическое занятие </div>
+                    <div class="lead lh-sm">Финансовые рынки и институты</div>
+                    <div class="opacity-75">
+                        ауд. <a href="?ad=25">22-07&nbsp;(Ленсовета 14)</a>
+                        —&nbsp;<a href="?ch=2">Кафедра 82</a><br />
+                        преп:&nbsp;<a class="" href="?pr=3158">Каськова А.А., ассистент</a>.&nbsp;&nbsp;
+                        гр:&nbsp;<a class="" href="?gr=7147">8423к</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3 text-danger">2 пара <small class="opacity-50">(11:10—12:40)</small></div>
+            <div class="mb-3 py-2 d-flex gap-2">
+                <div class="week1" style="font-size:1.4rem;" title="верхняя (нечетная) неделя">▲</div>
+                <div>
+                    <div class="fs-6 lh-sm opacity-50">Лекция</div>
+                    <div class="lead lh-sm">Деловая этика</div>
+                    <div class="opacity-75">
+                        ауд. <a href="?ad=62">23-01&nbsp;(Ленсовета 14)</a>
+                        —&nbsp;<a href="?ch=2">Кафедра 82</a><br />
+                        преп:&nbsp;<a class="" href="?pr=39335">Трофимова Н.Н., доцент, канд. экон. наук, доцент</a>.&nbsp;&nbsp;
+                        гр:&nbsp;<a class="" href="?gr=7147">8423к</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3 py-2 d-flex gap-2">
+                <div class="week2" style="font-size:1.4rem;" title="нижняя (четная) неделя">▼</div>
+                <div>
+                    <div class="fs-6 lh-sm opacity-50">Лекция</div>
+                    <div class="lead lh-sm">Теория организации</div>
+                    <div class="opacity-75">
+                        ауд. <a href="?ad=3">14-15&nbsp;(Ленсовета 14)</a>
+                        —&nbsp;<a href="?ch=2">Кафедра 82</a><br />
+                        преп:&nbsp;<a class="" href="?pr=2316">Гильдингерш М.Г., профессор, д-р экон. наук, профессор</a>.&nbsp;&nbsp;
+                        гр:&nbsp;<a class="" href="?gr=7147">8423к</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3 text-danger">3 пара <small class="opacity-50">(13:00—14:30)</small></div>
+            <div class="mb-3 py-2 d-flex gap-2">
+                <div class="week2" style="font-size:1.4rem;" title="нижняя (четная) неделя">▼</div>
+                <div>
+                    <div class="fs-6 lh-sm opacity-50">Практическое занятие </div>
+                    <div class="lead lh-sm">Теория организации</div>
+                    <div class="opacity-75">
+                        ауд. <a href="?ad=3">14-15&nbsp;(Ленсовета 14)</a>
+                        —&nbsp;<a href="?ch=2">Кафедра 82</a><br />
+                        преп:&nbsp;<a class="" href="?pr=2316">Гильдингерш М.Г., профессор, д-р экон. наук, профессор</a>.&nbsp;&nbsp;
+                        гр:&nbsp;<a class="" href="?gr=7147">8423к</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3 text-danger">4 пара <small class="opacity-50">(15:10—16:40)</small></div>
+            <div class="mb-3 py-2 d-flex gap-2">
+                <div class="week2" style="font-size:1.4rem;" title="нижняя (четная) неделя">▼</div>
+                <div>
+                    <div class="fs-6 lh-sm opacity-50">Лекция</div>
+                    <div class="lead lh-sm">Теория организации</div>
+                    <div class="opacity-75">
+                        ауд. <a href="?ad=3">14-15&nbsp;(Ленсовета 14)</a>
+                        —&nbsp;<a href="?ch=2">Кафедра 82</a><br />
+                        преп:&nbsp;<a class="" href="?pr=2316">Гильдингерш М.Г., профессор, д-р экон. наук, профессор</a>.&nbsp;&nbsp;
+                        гр:&nbsp;<a class="" href="?gr=7147">8423к</a>
+                    </div>
+                </div>
+            </div>
+        <h4 class="text-danger border-bottom border-danger border-2 px-0 py-2 my-5">Пятница</h4>
+            <div class="mt-3 text-danger">1 пара <small class="opacity-50">(9:30—11:00)</small></div>
+            <div class="mb-3 py-2 d-flex gap-2">
+                <div class="week1" style="font-size:1.4rem;" title="верхняя (нечетная) неделя">▲</div>
+                <div>
+                    <div class="fs-6 lh-sm opacity-50">Практическое занятие </div>
+                    <div class="lead lh-sm">Разработка программного обеспечения</div>
+                    <div class="opacity-75">
+                        ауд. <a href="?ad=144">14-11&nbsp;(Ленсовета 14)</a>
+                        —&nbsp;<a href="?ch=2">Кафедра 82</a><br />
+                        преп:&nbsp;<a class="" href="?pr=3668">Иванов М.М., ассистент</a>.&nbsp;&nbsp;
+                        гр:&nbsp;<a class="" href="?gr=7147">8423к</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3 text-danger">2 пара <small class="opacity-50">(11:10—12:40)</small></div>
+            <div class="mb-3 py-2 d-flex gap-2">
+                <div class="week1" style="font-size:1.4rem;" title="верхняя (нечетная) неделя">▲</div>
+                <div>
+                    <div class="fs-6 lh-sm opacity-50">Практическое занятие </div>
+                    <div class="lead lh-sm">Социально-экономическая статистика</div>
+                    <div class="opacity-75">
+                        ауд. <a href="?ad=25">22-07&nbsp;(Ленсовета 14)</a>
+                        —&nbsp;<a href="?ch=2">Кафедра 82</a><br />
+                        преп:&nbsp;<a class="" href="?pr=39335">Трофимова Н.Н., доцент, канд. экон. наук, доцент</a>.&nbsp;&nbsp;
+                        гр:&nbsp;<a class="" href="?gr=7147">8423к</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3 py-2 d-flex gap-2">
+                <div class="week2" style="font-size:1.4rem;" title="нижняя (четная) неделя">▼</div>
+                <div>
+                    <div class="fs-6 lh-sm opacity-50">Лекция</div>
+                    <div class="lead lh-sm">Социально-экономическая статистика</div>
+                    <div class="opacity-75">
+                        ауд. <a href="?ad=25">22-07&nbsp;(Ленсовета 14)</a>
+                        —&nbsp;<a href="?ch=2">Кафедра 82</a><br />
+                        преп:&nbsp;<a class="" href="?pr=39335">Трофимова Н.Н., доцент, канд. экон. наук, доцент</a>.&nbsp;&nbsp;
+                        гр:&nbsp;<a class="" href="?gr=7147">8423к</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3 text-danger">3 пара <small class="opacity-50">(13:00—14:30)</small></div>
+            <div class="mb-3 py-2 d-flex gap-2">
+                <div class="">&nbsp;</div>
+                <div>
+                    <div class="fs-6 lh-sm opacity-50">Практическое занятие </div>
+                    <div class="lead lh-sm">Деловая этика</div>
+                    <div class="opacity-75">
+                        ауд. <a href="?ad=25">22-07&nbsp;(Ленсовета 14)</a>
+                        —&nbsp;<a href="?ch=2">Кафедра 82</a><br />
+                        преп:&nbsp;<a class="" href="?pr=39335">Трофимова Н.Н., доцент, канд. экон. наук, доцент</a>.&nbsp;&nbsp;
+                        гр:&nbsp;<a class="" href="?gr=7147">8423к</a>
+                    </div>
+                </div>
+            </div>
+    <p id="form">&nbsp;</p>
+
+
+
+<div class="p-3 rounded d-print-none" style="background-color:beige;">
+    <div class="row">
+        <div class="col-12 col-sm-3 mb-2">
+            <label for="selGroup" class="form-label mb-1">Группа</label>
+        <select class="form-select guap-tom-select" id="selGroup" name="selGroup">
+            <option value="">–нет–</option>
+<option value="5956">1132</option><option value="5957">1137</option><option value="6254">1211</option><option value="6255">1212</option><option value="6259">1222</option><option value="6263">1223</option><option value="6260">1224</option><option value="6264">1231</option><option value="6266">1232</option><option value="6269">1241</option><option value="6271">1242</option><option value="6670">1243</option><option value="6273">1245</option><option value="6690">1311</option><option value="6692">1313</option><option value="6697">1321</option><option value="6698">1322</option><option value="6702">1323</option><option value="6703">1331</option><option value="6706">1332</option><option value="6708">1333</option><option value="6709">1334</option><option value="6710">1335</option><option value="6712">1341</option><option value="6713">1342</option><option value="6714">1343</option><option value="6718">1346</option><option value="7033">1411</option><option value="7034">1412</option><option value="7037">1421</option><option value="7038">1422</option><option value="7040">1423</option><option value="7041">1425</option><option value="7042">1431</option><option value="7272">1432</option><option value="7046">1433</option><option value="7043">1435</option><option value="7273">1438</option><option value="7048">1441</option><option value="7049">1442</option><option value="7050">1443</option><option value="7053">1445</option><option value="7054">1446</option><option value="7363">1510м</option><option value="7361">1511</option><option value="7362">1512</option><option value="7365">1521</option><option value="7711">1522</option><option value="7367">1523</option><option value="7366">1523м</option><option value="7368">1524</option><option value="7364">1526м</option><option value="7371">1530м</option><option value="7369">1531</option><option value="7372">1532</option><option value="7374">1533</option><option value="7370">1535</option><option value="7373">1538</option><option value="7715">1539</option><option value="7379">1540м</option><option value="7376">1541</option><option value="7377">1542</option><option value="7378">1543</option><option value="7381">1545</option><option value="7382">1546</option><option value="5983">2140</option><option value="6472">2144</option><option value="6276">2210</option><option value="6278">2211</option><option value="6279">2212</option><option value="6277">2213</option><option value="6274">2215</option><option value="6280">2221</option><option value="6281">2222</option><option value="6284">2233</option><option value="6288">2235</option><option value="6418">2237</option><option value="6291">2240</option><option value="6292">2243</option><option value="6293">2246</option><option value="6294">2247</option><option value="6420">2251</option><option value="6421">2252</option><option value="6422">2253</option><option value="6423">2254</option><option value="6424">2255</option><option value="6721">2310</option><option value="6723">2311</option><option value="6719">2315</option><option value="6725">2321</option><option value="6726">2322</option><option value="6727">2323</option><option value="6729">2333</option><option value="6735">2335</option><option value="6731">2337</option><option value="6732">2338</option><option value="6737">2340</option><option value="6738">2343</option><option value="6739">2346</option><option value="6742">2351</option><option value="6743">2352</option><option value="6744">2353</option><option value="6745">2354</option><option value="6746">2355</option><option value="7274">2410</option><option value="7055">2415</option><option value="7059">2424</option><option value="7060">2425</option><option value="7061">2427</option><option value="7062">2428</option><option value="7351">2429</option><option value="7064">2433</option><option value="7070">2435</option><option value="7071">2436</option><option value="7066">2437</option><option value="7067">2438</option><option value="7073">2440</option><option value="7074">2443</option><option value="7075">2446</option><option value="7077">2451</option><option value="7078">2452</option><option value="7079">2453</option><option value="7080">2454</option><option value="7081">2455</option><option value="7385">2510</option><option value="7383">2515</option><option value="7384">2515м</option><option value="7386">2520м</option><option value="7387">2521</option><option value="7388">2524</option><option value="7389">2527</option><option value="7390">2528</option><option value="7391">2528м</option><option value="7396">2530м</option><option value="7395">2532м</option><option value="7392">2533</option><option value="7398">2535</option><option value="7400">2535м</option><option value="7399">2536</option><option value="7393">2537</option><option value="7397">2537м</option><option value="7394">2538</option><option value="7401">2540</option><option value="7402">2543</option><option value="7403">2544</option><option value="7404">2546</option><option value="7405">2546м</option><option value="7411">2550м</option><option value="7406">2551</option><option value="7412">2551м</option><option value="7407">2552</option><option value="7408">2553</option><option value="7409">2554</option><option value="7410">2555</option><option value="7637">3126в</option><option value="6486">3135</option><option value="6301">3211</option><option value="6300">3215</option><option value="6298">3216</option><option value="6990">3218кс</option><option value="6307">3221</option><option value="7002">3222кс</option><option value="6306">3223</option><option value="6455">3226</option><option value="7684">3226в</option><option value="7295">3228</option><option value="6312">3231</option><option value="6311">3233</option><option value="6663">3234к</option><option value="6427">3235</option><option value="6428">3236</option><option value="6429">3237</option><option value="6753">3311</option><option value="6754">3312</option><option value="6752">3315</option><option value="6750">3316</option><option value="6764">3321</option><option value="6763">3323</option><option value="7297">3325кс</option><option value="6758">3326</option><option value="7683">3326в</option><option value="7618">3327</option><option value="6760">3328</option><option value="6774">3331</option><option value="6772">3333</option><option value="6767">3335</option><option value="6768">3336</option><option value="6769">3337</option><option value="6770">3338к</option><option value="7087">3411</option><option value="7088">3412</option><option value="7086">3415</option><option value="7084">3416</option><option value="7096">3421</option><option value="7097">3422</option><option value="7095">3423</option><option value="7275">3426</option><option value="7682">3426в</option><option value="7638">3427в</option><option value="7277">3428</option><option value="7278">3429</option><option value="7102">3431</option><option value="7101">3433</option><option value="7283">3435</option><option value="7284">3436</option><option value="7285">3437к</option><option value="7418">3510м</option><option value="7415">3511</option><option value="7526">3511кв</option><option value="7416">3512</option><option value="7417">3513</option><option value="7413">3516</option><option value="7414">3517</option><option value="7423">3520м</option><option value="7425">3521</option><option value="7426">3522</option><option value="7427">3522м</option><option value="7424">3523</option><option value="7422">3524м</option><option value="7717">3525кс</option><option value="7419">3526</option><option value="7527">3526в</option><option value="7420">3528</option><option value="7421">3529</option><option value="7431">3531</option><option value="7430">3533</option><option value="7428">3535</option><option value="7429">3536к</option><option value="7692">4141в</option><option value="6668">4215</option><option value="6313">4216</option><option value="6314">4217</option><option value="6315">4218</option><option value="6674">4219</option><option value="6434">4221</option><option value="6431">4226</option><option value="6433">4228</option><option value="6252">4231</option><option value="6318">4232</option><option value="6319">4233к</option><option value="6317">4236</option><option value="6323">4241</option><option value="7691">4241в</option><option value="6324">4242</option><option value="6325">4243</option><option value="7006">4314</option><option value="6776">4315</option><option value="6777">4316</option><option value="6778">4317</option><option value="6779">4318</option><option value="6780">4319</option><option value="6785">4321</option><option value="6782">4326</option><option value="6783">4327</option><option value="6784">4328</option><option value="7015">4329</option><option value="6787">4331</option><option value="6788">4332</option><option value="6789">4333к</option><option value="6791">4341</option><option value="7690">4341в</option><option value="6792">4342</option><option value="6793">4343</option><option value="7103">4414</option><option value="7104">4415</option><option value="7105">4416</option><option value="7106">4417</option><option value="7112">4421</option><option value="7109">4426</option><option value="7110">4427</option><option value="7111">4428</option><option value="7018">4431</option><option value="7114">4432</option><option value="7115">4433</option><option value="7116">4434</option><option value="7118">4441</option><option value="7689">4441в</option><option value="7119">4442</option><option value="7120">4443</option><option value="7528">4511в</option><option value="7436">4513мк</option><option value="7432">4514</option><option value="7433">4515</option><option value="7434">4516</option><option value="7435">4517</option><option value="7441">4520м</option><option value="7440">4521</option><option value="7437">4526</option><option value="7438">4527</option><option value="7439">4528</option><option value="7446">4530мк</option><option value="7442">4531</option><option value="7443">4532</option><option value="7444">4533</option><option value="7445">4534</option><option value="7447">4541</option><option value="7529">4541в</option><option value="7448">4542</option><option value="7451">4542мк</option><option value="7449">4543</option><option value="6797">6321к</option><option value="7124">6421к</option><option value="7714">6422к</option><option value="7128">6427</option><option value="7453">6520мк</option><option value="7452">6521к</option><option value="6448">7241</option><option value="6806">7341</option><option value="7136">7431</option><option value="7137">7441</option><option value="7461">7531</option><option value="7462">7541</option><option value="6174">8112кв</option><option value="6535">8114кв</option><option value="6562">8116к</option><option value="7655">8121кв</option><option value="6536">8124кв</option><option value="6056">8133к</option><option value="6583">8138к</option><option value="6341">8211к</option><option value="6378">8212кв</option><option value="6377">8214кв</option><option value="6349">8221к</option><option value="7654">8221кв</option><option value="6379">8224кв</option><option value="6344">8226</option><option value="7624">8232к</option><option value="6353">8233к</option><option value="7625">8234к</option><option value="6354">8235к</option><option value="6355">8236к</option><option value="7626">8237к</option><option value="7627">8238к</option><option value="6436">8241к</option><option value="6437">8243к</option><option value="6978">8251кс</option><option value="7000">8251ксв</option><option value="6439">8253к</option><option value="6664">8254к</option><option value="6810">8311к</option><option value="6880">8312кв</option><option value="6879">8314кв</option><option value="6814">8316к</option><option value="6820">8321к</option><option value="6818">8324к</option><option value="6884">8324кв</option><option value="6815">8326</option><option value="7003">8326кв</option><option value="6816">8327к</option><option value="6826">8335к</option><option value="7621">8337к</option><option value="7622">8338к</option><option value="6829">8341к</option><option value="6830">8343к</option><option value="6886">8351кв</option><option value="7299">8351ксв</option><option value="7298">8352кс</option><option value="6835">8353к</option><option value="7139">8411к</option><option value="7217">8412кв</option><option value="7143">8416к</option><option value="7141">8418к</option><option value="7149">8421к</option><option value="7653">8421кв</option><option value="7147" selected>8423к</option><option value="7221">8424кв</option><option value="7144">8426</option><option value="7220">8426кв</option><option value="7145">8427</option><option value="7156">8433к</option><option value="7157">8435к</option><option value="7619">8437к</option><option value="7620">8438к</option><option value="7160">8441к</option><option value="7161">8443к</option><option value="7166">8453к</option><option value="7224">8453кв</option><option value="7337">8454к</option><option value="7338">8455к</option><option value="7464">8511к</option><option value="7533">8512кв</option><option value="7531">8514кв</option><option value="7463">8515м</option><option value="7467">8516к</option><option value="7465">8518к</option><option value="7473">8521к</option><option value="7530">8521кв</option><option value="7474">8522к</option><option value="7471">8523к</option><option value="7536">8524кв</option><option value="7475">8524мк</option><option value="7468">8526</option><option value="7535">8526в</option><option value="7469">8527</option><option value="7477">8531к</option><option value="7478">8531мк</option><option value="7479">8533к</option><option value="7480">8535к</option><option value="7482">8535мк</option><option value="7481">8536к</option><option value="7458">8537к</option><option value="7459">8538к</option><option value="7483">8541к</option><option value="7724">8542к</option><option value="7484">8543к</option><option value="7485">8545мк</option><option value="7486">8546мк</option><option value="7537">8551ксв</option><option value="7723">8552кв</option><option value="7487">8552кс</option><option value="7488">8553к</option><option value="7538">8553кв</option><option value="7489">8554к</option><option value="7491">а5111</option><option value="7492">а5121</option><option value="7493">а5131</option><option value="7494">а5141</option><option value="7360">а5142</option><option value="7495">а5231к</option><option value="7496">а5251</option><option value="7497">а5311</option><option value="7498">а5321к</option><option value="7499">а5331</option><option value="7500">а5441</option><option value="7501">а5611к</option><option value="7502">а5621к</option><option value="7503">а5641к</option><option value="7504">а5811к</option><option value="7505">а5831к</option><option value="7506">а5841к</option><option value="7507">а5851к</option><option value="7508">а5м11</option><option value="7509">а5м52</option><option value="7013">и3812кв</option><option value="7339">и4812кв</option><option value="7375">и5131кс</option><option value="7730">и5230мк</option><option value="7726">и5620мк</option><option value="7534">и5812кв</option><option value="7472">и5823к</option><option value="7729">и5824мк</option><option value="7727">и5831мк</option><option value="6453">м211</option><option value="6358">м221</option><option value="6359">м222</option><option value="6369">м250</option><option value="6366">м251</option><option value="6980">м253кс</option><option value="6363">м256</option><option value="6373">м261</option><option value="6857">м311</option><option value="6859">м321</option><option value="6870">м350</option><option value="6867">м351</option><option value="7303">м353кс</option><option value="7342">м354кс</option><option value="6874">м361</option><option value="6877">м362</option><option value="7190">м411</option><option value="7191">м412</option><option value="7193">м421</option><option value="7194">м422к</option><option value="7196">м431к</option><option value="7280">м450</option><option value="7202">м451</option><option value="7281">м452</option><option value="7199">м456</option><option value="7207">м461</option><option value="7210">м462</option><option value="7511">м510м</option><option value="7510">м511</option><option value="7514">м520мк</option><option value="7512">м521</option><option value="7513">м522к</option><option value="7515">м531</option><option value="7519">м550</option><option value="7518">м551</option><option value="7539">м551ксв</option><option value="7520">м552</option><option value="7540">м552ксв</option><option value="7716">м553</option><option value="7517">м555м</option><option value="7516">м556</option><option value="7522">м557м</option><option value="7521">м558м</option><option value="7523">м561</option><option value="7524">м561м</option><option value="7525">м562</option><option value="7615">пн13м61</option><option value="7614">пн14м51</option><option value="7612">пс15141</option>        </select>
+        </div>
+        <div class="col-12 col-sm-9 mb-2">
+            <label for="selPrep" class="form-label mb-1">Преподаватель</label>
+        <select class="form-select guap-tom-select" id="selPrep" name="selPrep">
+            <option value="">–нет–</option>
+<option value="3654">Авраменко А.Я., ассистент</option><option value="38597">Агаев Г.А.О., профессор, д-р юрид. наук, профессор</option><option value="39582">Аграновский А.В., доцент, канд. техн. наук, доцент</option><option value="2087">Адамов А.И., старший преподаватель</option><option value="2308">Акопян Б.К., старший преподаватель</option><option value="39571">Аксенов А.В., старший преподаватель</option><option value="3159">Алексеева Е.С., доцент, канд. юрид. наук</option><option value="38882">Алексеева И.А., доцент, канд. экон. наук, доцент</option><option value="2367">Алексеева П.М., заведующий кафедрой, канд. пед. наук</option><option value="2284">Аман Е.Э., доцент, канд. техн. наук</option><option value="2707">Ананенко В.М., доцент, канд. техн. наук, доцент</option><option value="39623">Андреев В.М., доцент, канд. физ.-мат. наук</option><option value="2659">Андрейцо С.Ю., доцент, канд. юрид. наук, доцент</option><option value="38536">Андронов С.А., доцент, канд. техн. наук, доцент</option><option value="39064">Андросенко Н.В., доцент, канд. экон. наук</option><option value="3538">Анисимов А.А., ассистент</option><option value="3621">Анисимов А.Г., доцент, канд. ист. наук</option><option value="38605">Анодина-Андриевская Е.М., доцент, канд. техн. наук, доцент</option><option value="2714">Антипина Ю.В., старший преподаватель</option><option value="3532">Антипов А.М., преподаватель</option><option value="38918">Антохин Е.А., доцент, канд. техн. наук</option><option value="3535">Антюшин Н.А., преподаватель</option><option value="3038">Арефьев А.В., доцент, канд. физ.-мат. наук, доцент</option><option value="3163">Аристов А.А., ассистент</option><option value="39324">Армашова-Тельник Г.С., доцент, канд. экон. наук, доцент</option><option value="38856">Архипова И.И., доцент, канд. экон. наук</option><option value="2954">Архипов С.Н., доцент</option><option value="2314">Ассаул В.Н., доцент, канд. техн. наук, доцент</option><option value="39365">Афанасьева А.В., старший преподаватель</option><option value="3191">Афанасьева В.И., ассистент</option><option value="2644">Афанасьева О.В., доцент, канд. техн. наук, доцент</option><option value="39166">Аюков Б.А., доцент, канд. техн. наук</option><option value="38529">Бабина Н.А., старший преподаватель</option><option value="3193">Бабчинецкий С.Г., ассистент</option><option value="3194">Бабюк Ю., ассистент</option><option value="40099">Баданова Е.В., доцент, канд. юрид. наук</option><option value="38459">Баженов А.В., доцент, канд. юрид. наук, доцент</option><option value="51">Бакустина М.И., ассистент</option><option value="39291">Бакшеева Ю.В., доцент, канд. техн. наук</option><option value="38461">Баландина И.Ю., старший преподаватель</option><option value="40103">Баландин А.Н., Преподаватель военного учебного центра при ГУАП</option><option value="39653">Балонишников А.М., профессор, д-р техн. наук, доцент</option><option value="38662">Балышева О.Л., доцент, канд. техн. наук, доцент</option><option value="3114">Баранов Д.А., старший преподаватель</option><option value="3539">Бардовский А.А., ассистент</option><option value="39198">Бариков Л.Н., доцент, канд. техн. наук, доцент</option><option value="39290">Барклаевская Н.В., старший преподаватель</option><option value="3095">Барышникова И.Е., старший преподаватель</option><option value="3199">Башкина-Габруская А.В., преподаватель</option><option value="39964">Башкин В.М., заведующий кафедрой, д-р пед. наук, профессор</option><option value="39411">Бежиашвили М.Л., старший преподаватель</option><option value="3104">Безгодов А.А., доцент, канд. воен. наук</option><option value="39689">Беззатеева В.С., старший преподаватель</option><option value="38793">Беззатеев С.В., заведующий кафедрой, д-р техн. наук, доцент</option><option value="3071">Белая Т.И., доцент, канд. техн. наук, доцент</option><option value="3757">Белкин У.В., ассистент</option><option value="3586">Белов Д.А., старший преподаватель, канд. техн. наук</option><option value="2901">Белов К.А., старший преподаватель</option><option value="3551">Белый Н.В., ассистент</option><option value="2949">Беляева А.С., доцент</option><option value="38671">Бердина М.Ю., доцент, канд. экон. наук, доцент</option><option value="38471">Бердин А.Э., старший преподаватель</option><option value="39999">Бердникова Н.А., доцент, канд. экон. наук, доцент</option><option value="2952">Березина А.А., старший преподаватель</option><option value="3086">Беспятый Г.Ю., старший преподаватель</option><option value="39442">Бестугин А.Р., заведующий кафедрой, д-р техн. наук, профессор</option><option value="3169">Бибарсов М.Р., доцент, канд. техн. наук, доцент</option><option value="39587">Бизина О.А., старший преподаватель</option><option value="3679">Билятдинов К.З., профессор, д-р техн. наук, доцент</option><option value="39340">Бирюков Б.Л., старший преподаватель</option><option value="38734">Блюм В.С., доцент, канд. техн. наук</option><option value="63">Бобков О.Б., доцент, к.псх.н., доцент</option><option value="2680">Бобович Т.А., старший преподаватель</option><option value="2975">Бобрышов А.П., старший преподаватель</option><option value="39177">Богатырев В.А., профессор, д-р техн. наук</option><option value="39542">Богданов Д.В., доцент, канд. техн. наук, доцент</option><option value="39461">Богословская Н.В., доцент, канд. техн. наук, доцент</option><option value="39931">Боер А.А., заведующий кафедрой, канд. юрид. наук, доцент</option><option value="39748">Боер А.Л., доцент, канд. юрид. наук</option><option value="38701">Боер В.М., профессор, д-р юрид. наук, профессор</option><option value="2034">Боженко В.В., старший преподаватель</option><option value="3089">Бойков В.И., доцент, канд. техн. наук, доцент</option><option value="38460">Болотина Е.В., профессор, д-р юрид. наук, доцент</option><option value="2769">Бондарь Е.Г., старший преподаватель</option><option value="3771">Бонокин Д.Д., почасовая нагрузка</option><option value="2160">Борисенок А.А., старший преподаватель</option><option value="2690">Борисенок Н.А., старший преподаватель</option><option value="3036">Борисова М.О., старший преподаватель</option><option value="821">Бравая Ю.Ю, старший преподаватель</option><option value="39107">Бржезовский А.В., доцент, канд. техн. наук, доцент</option><option value="39500">Брунов М.С., старший преподаватель</option><option value="40072">Бугаев А.Д., Преподаватель военного учебного центра при ГУАП</option><option value="39111">Будагов А.С., заведующий кафедрой, д-р экон. наук, профессор</option><option value="3704">Букреев Б.А., ассистент</option><option value="2813">Булатов В.В., доцент, канд. техн. наук, доцент</option><option value="39802">Булатов Р.Б., профессор, д-р юрид. наук, доцент</option><option value="39685">Булгаков Д.А., старший преподаватель</option><option value="3657">Бульченко А.Е., преподаватель</option><option value="2439">Бунина Ю.А., ассистент</option><option value="2169">Бурков А.А., доцент, канд. техн. наук</option><option value="39673">Бурлуцкий С.Г., доцент, канд. техн. наук</option><option value="38991">Бурова М.Л., доцент, канд. филос. наук, доцент</option><option value="3527">Бурыкин А.А., доцент, канд. воен. наук, доцент</option><option value="39359">Бутенина Д.В., доцент, канд. физ.-мат. наук, доцент</option><option value="3548">Быстров С.В., доцент, канд. техн. наук, доцент</option><option value="40115">Ваганов М.А., профессор, д-р техн. наук</option><option value="3113">Валов К.Д., старший преподаватель</option><option value="3764">Варухин И.Д., ассистент</option><option value="39721">Варфоломеева В.А., доцент, канд. экон. наук, доцент</option><option value="252">Васильева А.В., доцент, к.т.н.</option><option value="3096">Васильева В.С., ассистент</option><option value="2389">Васильева Д.В., старший преподаватель</option><option value="2830">Васильева О.И., доцент, канд. юрид. наук, доцент</option><option value="3571">Васильев И.Н., преподаватель</option><option value="39866">Ватаева Е.Ю., доцент, канд. техн. наук</option><option value="2773">Ватутин М.А., доцент, канд. техн. наук, доцент</option><option value="3221">Вахромеев Б.А., ассистент</option><option value="39652">Вашакидзе Г.Т., старший преподаватель</option><option value="3508">Величко И.С., ассистент</option><option value="40055">Вельмисов И.А., профессор, д-р техн. наук, профессор</option><option value="2948">Вересова А.М., старший преподаватель</option><option value="39102">Вершинина Л.П., профессор, д-р техн. наук, доцент</option><option value="3053">Ветрова Ю.В., ассистент</option><option value="39297">Вешев Н.А., доцент, канд. физ.-мат. наук, доцент</option><option value="3510">Викторов А.О., преподаватель</option><option value="2172">Винниченко А.В., доцент, к.т.н.</option><option value="3226">Винниченко В.Ю., доцент, канд. физ.-мат. наук</option><option value="39323">Виноградова Е.П., старший преподаватель</option><option value="40025">Виноградов А.Ю., старший преподаватель</option><option value="38668">Виноградов И.Г., доцент, канд. пед. наук, доцент</option><option value="38862">Власова В.М., профессор, д-р экон. наук, профессор</option><option value="39832">Власова О.В., старший преподаватель</option><option value="3229">Вознесенский Е.А., ассистент</option><option value="3155">Волкова Н.А., доцент, канд. физ.-мат. наук</option><option value="3745">Волкова Т.А., доцент, канд. техн. наук</option><option value="39464">Волков В.Ю., профессор, д-р техн. наук, профессор</option><option value="39023">Волков Д.А., старший преподаватель</option><option value="2762">Волков Д.Ю., доцент, канд. физ.-мат. наук, доцент</option><option value="39275">Волков П.Л., старший преподаватель</option><option value="311">Волуца А.В., ассистент</option><option value="38934">Воробьева Л.С., доцент, канд. экон. наук, доцент</option><option value="39493">Воронина М.П., доцент, канд. пед. наук, доцент</option><option value="3625">Воронцов А.Г., доцент, канд. техн. наук</option><option value="2944">Воропаев И.А., старший преподаватель</option><option value="38937">Востриков А.А., доцент, канд. техн. наук, доцент</option><option value="38481">Выжлецова Н.В., доцент, канд. культурологии, доцент</option><option value="39824">Выжлецов П.Г., доцент, канд. филос. наук, доцент</option><option value="38651">Вышенская Ю.П., профессор, д-р филол. наук, доцент</option><option value="841">Габдрахманов Р.А., ассистент</option><option value="39450">Габдуллина А.Ш., старший преподаватель</option><option value="126">Гайдук Е.А., ассистент</option><option value="39137">Гайдукова Ю.Н., старший преподаватель</option><option value="39404">Галанина В.А., доцент, канд. техн. наук, доцент</option><option value="39864">Ганьшин Ю.А., доцент, канд. техн. наук</option><option value="39088">Гарютин И.А., старший преподаватель</option><option value="643545">Гасанова А.Т., ассистент</option><option value="38547">Гельдибаев М.Х., профессор, д-р юрид. наук, профессор</option><option value="2318">Гетманова Г.В., доцент, канд. экон. наук, доцент</option><option value="2316">Гильдингерш М.Г., профессор, д-р экон. наук, профессор</option><option value="38739">Гладкий Н.А., доцент, канд. техн. наук, доцент</option><option value="3622">Гладких Е.Г., ассистент</option><option value="3741">Голдовский А.А., преподаватель</option><option value="3553">Головачев В.Ю., доцент, канд. техн. наук, доцент</option><option value="3677">Головенков А.Н., ассистент</option><option value="39975">Головцов Д.Л., доцент, канд. техн. наук</option><option value="2706">Голосий А.С., доцент, канд. техн. наук</option><option value="39086">Голубков В.А., доцент, канд. техн. наук, доцент</option><option value="2862">Гончарова В.И., доцент, канд. техн. наук</option><option value="3725">Гончаровский П.А., ассистент</option><option value="38811">Горбачев С.В., доцент, канд. техн. наук, доцент</option><option value="38827">Гордеев А.В., профессор, д-р техн. наук, профессор</option><option value="2699">Гордеева Е.Ю., старший преподаватель</option><option value="3522">Горелая А.В., доцент, канд. техн. наук, доцент</option><option value="38465">Горелова Н.А., старший преподаватель</option><option value="39987">Грабарь А.Г., доцент, канд. техн. наук</option><option value="2306">Гречкин Н.Л., старший преподаватель</option><option value="39985">Григорьева Н.Н., старший преподаватель</option><option value="39495">Григорьев А.П., старший преподаватель</option><option value="2844">Григорьев Е.К., старший преподаватель</option><option value="39155">Губарева Е.Г., доцент</option><option value="38678">Губко А.А., доцент, канд. юрид. наук, доцент</option><option value="39245">Гудкова К.В., доцент, канд. филол. наук, доцент</option><option value="2779">Гуков С.Ю., старший преподаватель</option><option value="441">Гуков Ю.И., ассистент</option><option value="3514">Гулиев Р.Б.О., доцент, канд. техн. наук, доцент</option><option value="2909">Гумеров В.А., преподаватель</option><option value="39490">Гурнов К.Б., доцент, канд. техн. наук</option><option value="38468">Гурьянов Е.В., старший преподаватель</option><option value="39052">Гусман Л.Ю., профессор, д-р ист. наук, доцент</option><option value="39053">Гусман Ю.А., доцент, канд. техн. наук, доцент</option><option value="38692">Гуткович О.А., старший преподаватель</option><option value="3257">Давидович Б.В., ассистент</option><option value="39138">Давыденко Е.В., доцент, канд. экон. наук, доцент</option><option value="3560">Давыдов В.В., доцент, канд. техн. наук</option><option value="3562">Дакуо Ж.-М.Н., ассистент</option><option value="2727">Данилко Р.В., Преподаватель военного учебного центра при ГУАП</option><option value="38980">Данилов Н.А., доцент, канд. техн. наук</option><option value="2913">Дворников С.В., профессор, д-р техн. наук, профессор</option><option value="3076">Дворников С.С., доцент, канд. техн. наук</option><option value="39118">Дехканбаев Д.С., доцент, канд. техн. наук</option><option value="38762">Дик О.Е., профессор, д-р биол. наук, доцент</option><option value="39441">Дмитриева С.В., доцент, канд. экон. наук</option><option value="39704">Долидзе А.Н., старший преподаватель</option><option value="3636">Дробышевская С.С., ассистент</option><option value="39237">Дроздова А.П., старший преподаватель, канд. экон. наук</option><option value="39429">Дубинина Е.Ю., доцент, канд. филол. наук, доцент</option><option value="3649">Дунаев Н.П., ассистент</option><option value="39249">Дьякова Г.Н., доцент, канд. физ.-мат. наук, доцент</option><option value="39592">Евгеньев А.А., доцент, канд. пед. наук</option><option value="38573">Евдокимов И.М., доцент, канд. пед. наук, доцент</option><option value="3734">Егоров А.Э., ассистент</option><option value="39247">Егоров В.В., заведующий кафедрой, д-р техн. наук, старший научный сотрудник</option><option value="2726">Егоров М.Ю., доцент, канд. техн. наук, доцент</option><option value="2008">Езерский В.В., профессор, д-р техн. наук, профессор</option><option value="2792">Еливанова М.А., доцент, канд. филол. наук, доцент</option><option value="38513">Елина Т.Н., доцент, канд. экон. наук, доцент</option><option value="3778">Елихин А.С., ассистент</option><option value="2309">Епифанцев К.В., доцент, канд. техн. наук, доцент</option><option value="3040">Епринцев М.А., старший преподаватель</option><option value="38872">Ермолович Г.П., профессор, д-р юрид. наук, профессор</option><option value="3559">Ершов В.Н., доцент, канд. физ.-мат. наук</option><option value="38838">Ершов Д.Ю., доцент, канд. техн. наук, доцент</option><option value="39714">Ерышева А.В., старший преподаватель</option><option value="2713">Ерышов В.Г., доцент, канд. техн. наук</option><option value="39545">Ефимова-Комарова Л.Б., доцент, канд. пед. наук, доцент</option><option value="2963">Ефремов Н.Ю., доцент, канд. техн. наук</option><option value="39329">Жаринов О.О., доцент, канд. техн. наук, доцент</option><option value="2848">Железняк И.Н., доцент, канд. техн. наук</option><option value="2956">Живодеров А.В., доцент, канд. пед. наук, доцент</option><option value="39899">Жильникова Н.А., профессор, д-р техн. наук, доцент</option><option value="2736">Жиров В.А., профессор, д-р техн. наук, профессор</option><option value="3282">Жукалин В., ассистент</option><option value="39438">Жуков А.Д., доцент, канд. техн. наук, доцент</option><option value="39127">Журавлев А.А., старший преподаватель</option><option value="39139">Журавлев В.А., профессор, д-р ист. наук, профессор</option><option value="2513">Жучкова М.Г., доцент, канд. физ.-мат. наук</option><option value="3690">Завражных Н.А., ассистент</option><option value="3631">Заготовкин А.Н., старший преподаватель</option><option value="2962">Загураева М.В., старший преподаватель</option><option value="3285">Залищук А.А., ассистент</option><option value="3162">Захарова Я.А., преподаватель</option><option value="242">Зива В.В., старший преподаватель</option><option value="39354">Зилинберг А.Ю., доцент, канд. техн. наук</option><option value="39165">Злобина О.В., доцент, к.э.н.</option><option value="39504">Золотухина Н.О., старший преподаватель</option><option value="38751">Золотухин О.И., доцент, канд. экон. наук, доцент</option><option value="3540">Зубарев М.А., ассистент</option><option value="38574">Зуева Н.В., старший преподаватель</option><option value="39004">Иванова Г.Н., доцент, канд. экон. наук, доцент</option><option value="39856">Иванова Е.Р., ассистент</option><option value="38541">Иванова Н.А., доцент, канд. экон. наук, доцент</option><option value="2154">Иванов В.Н., доцент, канд. техн. наук</option><option value="3739">Иванов В.О., ассистент</option><option value="3680">Иванов М.В., старший преподаватель, к.т.н.</option><option value="2987">Иванов М.Е., ассистент</option><option value="3668">Иванов М.М., ассистент</option><option value="38889">Иванов Ю.П., доцент, канд. техн. наук, доцент</option><option value="40065">Игнатьева И.Ф., профессор, д-р филос. наук, профессор</option><option value="2926">Игнатьева Н.Ю., доцент, канд. юрид. наук, доцент</option><option value="39244">Игнатьева С.В., профессор, д-р юрид. наук, профессор</option><option value="40051">Изотов О.А., профессор, канд. техн. наук, доцент</option><option value="39387">Ильинская Е.М., профессор, д-р экон. наук, профессор</option><option value="40122">Инчаурральде Б.К.-., доцент, канд. филол. наук</option><option value="3766">Иогансон И.Д., ассистент</option><option value="2694">Исаева М.Н., старший преподаватель</option><option value="39068">Исаков В.И., доцент, канд. техн. наук, доцент</option><option value="38486">Казаков В.И., доцент, канд. техн. наук</option><option value="2974">Кайнов В.И., профессор, д-р юрид. наук, профессор</option><option value="3142">Калачиков П.Н., доцент, канд. техн. наук</option><option value="39912">Капелюш М.Б., старший преподаватель</option><option value="39422">Каптен Г.Ю., доцент, канд. филос. наук</option><option value="2601">Карандашев А.А., старший преподаватель</option><option value="39658">Карасева Е.И., доцент, канд. экон. наук</option><option value="2923">Карасев В.В., доцент, канд. техн. наук</option><option value="39367">Карпова О.П., старший преподаватель</option><option value="39046">Карпова С.Н., доцент, канд. пед. наук, доцент</option><option value="3536">Карцева А.А., доцент, канд. филос. наук</option><option value="3537">Кассюра Е.В., доцент, канд. экон. наук</option><option value="3158">Каськова А.А., ассистент</option><option value="3742">Кац Р.А., ассистент</option><option value="3028">Каширина А.А., ассистент</option><option value="2667">Квас Е.С., старший преподаватель</option><option value="39349">Килимник В.А., доцент, канд. техн. наук</option><option value="38477">Киприянова Е.Н., доцент, канд. техн. наук</option><option value="39695">Кириллова А.В., старший преподаватель</option><option value="2849">Кириллова Е.Г., доцент, канд. пед. наук, доцент</option><option value="2843">Кириллова Т.К., профессор, д-р юрид. наук, профессор</option><option value="40045">Кириченко А.В., профессор, д-р техн. наук, профессор</option><option value="38632">Киршина И.А., доцент, канд. экон. наук, доцент</option><option value="3316">Киселев И.П., ассистент</option><option value="3073">Китаев В.В., старший преподаватель</option><option value="2637">Клименко А.В., доцент, канд. техн. наук</option><option value="3084">Климочкина Л.А., ассистент</option><option value="39826">Княжский А.Ю., доцент, канд. техн. наук</option><option value="3767">Кобзарь Е.Н., почасовая нагрузка</option><option value="38808">Коваленко И.И., доцент, канд. физ.-мат. наук, доцент</option><option value="2772">Коврегина Г.М., доцент, канд. техн. наук, доцент</option><option value="2345">Коврегин В.Н., доцент, канд. техн. наук, доцент</option><option value="38858">Козенко С.Л., доцент, канд. техн. наук, доцент</option><option value="39815">Козлов М.Д., ассистент</option><option value="3751">Козлов Т.М., ассистент</option><option value="38603">Колесников А.М., профессор, д-р экон. наук, профессор</option><option value="2635">Колесникова С.И., профессор, д-р техн. наук, доцент</option><option value="39569">Колесникова Т.В., профессор, д-р экон. наук, доцент</option><option value="3652">Колесова А.Д., ассистент</option><option value="40056">Коликов Д.В., Начальник цикла - старший преподаватель военного у</option><option value="38781">Колобашкина Т.В., доцент, канд. техн. наук, доцент</option><option value="39344">Коломийцев С.Ю., доцент, канд. филос. наук, доцент</option><option value="2761">Коломойцев В.С., доцент, канд. техн. наук, доцент</option><option value="3324">Комарова Л.В., ассистент</option><option value="3520">Кондратьева Т.Э., ассистент</option><option value="39308">Кононова О.В., доцент, канд. социол. наук, доцент</option><option value="3782">Конопельцева К.А., почасовая нагрузка</option><option value="2372">Коптева Л.А., доцент, канд. экон. наук</option><option value="38684">Копыльцов А.В., заведующий кафедрой, д-р техн. наук, профессор</option><option value="2377">Корбакова А.А., доцент, канд. пед. наук</option><option value="38713">Корнилова С.В., доцент, канд. экон. наук, доцент</option><option value="38661">Коробкова С.Н., заведующий кафедрой, д-р филос. наук, доцент</option><option value="3686">Коровина С.В., преподаватель</option><option value="2281">Коромысличенко В.Н., доцент, канд. техн. наук</option><option value="3058">Корсикова Н.А., доцент, канд. юрид. наук, доцент</option><option value="39909">Космачев В.М., профессор, канд. техн. наук, доцент</option><option value="2650">Косогоров О.М., старший преподаватель</option><option value="3506">Костач А.Д., ассистент</option><option value="2340">Костин А.С., доцент</option><option value="39251">Костылев А.О., доцент, канд. филол. наук, доцент</option><option value="39517">Котликов Е.Н., профессор, д-р физ.-мат. наук, профессор</option><option value="3511">Кохман Д.В., доцент, канд. юрид. наук</option><option value="2649">Коцкович В.Б., доцент, канд. техн. наук</option><option value="39770">Кочин Д.А., старший преподаватель</option><option value="2360">Кочин К.А., ассистент</option><option value="2872">Кошкаров А.С., доцент, канд. техн. наук, доцент</option><option value="3151">Кравченко В.В., доцент, канд. техн. наук</option><option value="38612">Кравченко В.И., профессор, д-р филос. наук, доцент</option><option value="39093">Красильникова О.И., доцент, канд. техн. наук, доцент</option><option value="3077">Красников Н.С., старший преподаватель</option><option value="3670">Крестовников К.Д., старший преподаватель, канд. техн. наук</option><option value="39246">Криволапчук И.Г., старший преподаватель</option><option value="2661">Кривчун Е.А., доцент, канд. хим. наук, доцент</option><option value="38607">Кричевский М.Л., профессор, д-р техн. наук, профессор</option><option value="39398">Крук А.Е., доцент, канд. техн. наук</option><option value="39185">Крылова Т.Е., старший преподаватель</option><option value="3663">Крылов Д.Р., ассистент</option><option value="39563">Крячко А.Ф., заведующий кафедрой, д-р техн. наук, профессор</option><option value="39589">Кудрина С.А., старший преподаватель</option><option value="2918">Кудрявцев Ю.А., доцент, канд. юрид. наук, доцент</option><option value="40101">Кудря Л.В., старший преподаватель</option><option value="3570">Кузнецова Е.С., преподаватель</option><option value="39657">Кузнецов В.А., доцент, канд. техн. наук</option><option value="3655">Кузнецов Д.Г., доцент, канд. техн. наук</option><option value="2814">Кузьменко В.П., доцент, канд. техн. наук, доцент</option><option value="3648">Кузьмин С.В., доцент</option><option value="2647">Кузьмичев Ю.А., доцент, канд. техн. наук, доцент</option><option value="2747">Куликова Е.В., старший преподаватель</option><option value="2036">Куликовская А.В., старший преподаватель</option><option value="2355">Кунтуров А.Л., доцент, канд. воен. наук</option><option value="2298">Кунтурова Н.Б., профессор, д-р пед. наук, доцент</option><option value="38659">Курицын К.А., доцент, канд. техн. наук</option><option value="2368">Куркова О.П., профессор, д-р техн. наук</option><option value="39643">Курлов В.В., доцент, канд. техн. наук, доцент</option><option value="2002">Куртяник Д.В., старший преподаватель</option><option value="2731">Кухарова Т.В., доцент, канд. техн. наук</option><option value="38877">Кучин Н.В., доцент, канд. техн. наук, доцент</option><option value="38833">Лавровская Н.П., доцент, канд. физ.-мат. наук, доцент</option><option value="3627">Ларионов А.А., ассистент</option><option value="38777">Лашкова Н.Г., доцент, канд. экон. наук</option><option value="2686">Лебедев В.Ф., доцент, канд. техн. наук</option><option value="3118">Лебухова Д.С., старший преподаватель</option><option value="38886">Левченко М.В., старший преподаватель</option><option value="3063">Лезова А.А., доцент, канд. физ.-мат. наук</option><option value="2751">Лезова И.Е., доцент, канд. физ.-мат. наук</option><option value="2405">Леонтьева Т.С., ассистент</option><option value="39002">Либина Р.Б., доцент, канд. ист. наук, доцент</option><option value="39207">Линский Е.М., доцент, канд. техн. наук</option><option value="3171">Липская Е.Ю., доцент, канд. юрид. наук</option><option value="2950">Литвинов Б.Я., профессор, д-р техн. наук, доцент</option><option value="3066">Лихоманова С.В., доцент, канд. физ.-мат. наук</option><option value="40119">Ломакина И.Б., профессор, д-р юрид. наук, профессор</option><option value="39709">Лосева О.С., доцент, канд. экон. наук</option><option value="38636">Лосев К.В., заведующий кафедрой, д-р экон. наук, профессор</option><option value="2745">Лось А.П., профессор, д-р техн. наук, профессор</option><option value="40009">Лукина Е.М., доцент, канд. экон. наук, доцент</option><option value="38526">Лукошников Е.Г., старший преподаватель</option><option value="38848">Лукьяненко И.Н., доцент, канд. техн. наук, доцент</option><option value="2920">Лукьянова Г.В., доцент, канд. юрид. наук</option><option value="2326">Лукьянов В.Ю., доцент, канд. ист. наук, доцент</option><option value="2965">Лунева Е.И., старший преподаватель</option><option value="38917">Луцив В.Р., профессор, д-р техн. наук</option><option value="40139">Львов А.В., доцент, канд. филос. наук</option><option value="38997">Ляшенко А.Л., доцент, к.т.н.</option><option value="2850">Майер Е.А., старший преподаватель</option><option value="2953">Майоров Е.Е., доцент, канд. техн. наук, доцент</option><option value="39007">Майоров Н.Н., профессор, д-р техн. наук, доцент</option><option value="2352">Макаренко Е.А., доцент, канд. экон. наук, доцент</option><option value="3512">Макаричев Ф.В., профессор, д-р филол. наук</option><option value="38810">Макаров А.А., профессор, д-р техн. наук, доцент</option><option value="2634">Макаров А.А., профессор, д-р физ.-мат. наук, доцент</option><option value="38558">Макарова Н.В., профессор, д-р пед. наук, профессор</option><option value="2951">Максимов В.В., профессор, д-р техн. наук, профессор</option><option value="38524">Малаханов Р.Н., доцент, канд. техн. наук, доцент</option><option value="2812">Малашин Р.О., доцент, канд. техн. наук</option><option value="39225">Малинин С.И., доцент, канд. техн. наук, доцент</option><option value="39488">Малышев А.К., доцент, канд. техн. наук</option><option value="39401">Малькова М.В., старший преподаватель</option><option value="38710">Мальцева М.В., старший преподаватель</option><option value="39594">Мамедов Н.Д.О., доцент</option><option value="3141">Мамонтов Е.В., доцент, канд. техн. наук</option><option value="39763">Маркелова Н.В., доцент, канд. техн. наук</option><option value="39079">Марковская Н.В., доцент, канд. техн. наук, доцент</option><option value="39973">Мартынов А.А., доцент, канд. техн. наук, доцент</option><option value="39976">Мартынова Ю.А., доцент, канд. экон. наук, доцент</option><option value="3678">Марченко А.С., ассистент</option><option value="39534">Марченко Б.И., профессор, д-р техн. наук, профессор</option><option value="312">Марчук Д.Ю., ассистент</option><option value="38805">Маскаленко Э.В., старший преподаватель</option><option value="2256">Маскатулин М.М., старший преподаватель</option><option value="3024">Маслаков М.Л., доцент, канд. техн. наук</option><option value="2973">Маслова Ж.Н., заведующий кафедрой, д-р филол. наук, доцент</option><option value="2353">Масыч Т.Л., доцент, канд. филол. наук</option><option value="2957">Матасов Ю.Ф., доцент, канд. техн. наук</option><option value="38506">Мателенок И.В., доцент, канд. техн. наук, доцент</option><option value="3528">Матлин А.Д., преподаватель</option><option value="39208">Матьяш В.А., доцент, канд. техн. наук, доцент</option><option value="3769">Маханов И.А., ассистент</option><option value="39377">Машков И.Г., старший преподаватель</option><option value="3109">Медунецкий В.М., профессор, д-р техн. наук, профессор</option><option value="3008">Мельникова Е.Б., старший преподаватель</option><option value="3740">Меркулова А.Э., старший преподаватель, к.и.н.</option><option value="3575">Меркулов И.В., доцент, канд. ист. наук</option><option value="3630">Метлицкая Л.В., ассистент</option><option value="2967">Миклуш В.А., доцент, канд. техн. наук</option><option value="38719">Милова В.М., доцент, канд. техн. наук, доцент</option><option value="39828">Мингалев А.Н., доцент, канд. техн. наук</option><option value="3615">Минкинен Е.А., ассистент</option><option value="3039">Миронов А.В., доцент, канд. экон. наук</option><option value="3633">Мирошниченко Н.И., ассистент</option><option value="3085">Мисникова Т.С., старший преподаватель</option><option value="3777">Митюков Д.С., ассистент</option><option value="2461">Михайлова М.В., почасовая нагрузка</option><option value="2365">Михайлов А.Н., профессор, д-р техн. наук, профессор</option><option value="39254">Михайлов В.Ф., профессор, д-р техн. наук, профессор</option><option value="626">Михлин В.С., почасовая нагрузка </option><option value="39622">Мичурин С.В., профессор, д-р техн. наук, доцент</option><option value="38707">Мишура Т.П., доцент, канд. техн. наук, доцент</option><option value="2968">Молчанова Р.В., старший преподаватель</option><option value="38463">Молчанова С.М., доцент, канд. экон. наук, доцент</option><option value="39840">Молчанов А.Ю., доцент, канд. техн. наук, доцент</option><option value="38580">Монаков А.А., профессор, д-р техн. наук, профессор</option><option value="2766">Морева С.Л., доцент, канд. техн. наук</option><option value="3785">Морозов А.Б., ассистент</option><option value="687445">Морозов А.В., ассистент</option><option value="39634">Москалева О.И., старший преподаватель</option><option value="3168">Москвина Е.Ю., доцент, канд. техн. наук, доцент</option><option value="39470">Мошак Н.Н., профессор, д-р техн. наук, доцент</option><option value="285765">Мошкалов Н.А., ассистент</option><option value="3519">Мошнин Д.Н., ассистент</option><option value="2883">Мурашова М.А., старший преподаватель</option><option value="3167">Мустафин Т.Р., ассистент</option><option value="38514">Мыльников В.А., доцент, канд. техн. наук, доцент</option><option value="3130">Мышко В.В., доцент, канд. техн. наук, доцент</option><option value="39559">Назаревич С.А., доцент, канд. техн. наук, доцент</option><option value="2875">Назаренко П.А., старший преподаватель</option><option value="39393">Наймитенко Н.В., старший преподаватель</option><option value="3702">Насибов А.Э., ассистент</option><option value="3110">Наумов С.А., ассистент</option><option value="39415">Невейкин М.Е., доцент, канд. техн. наук, доцент</option><option value="38485">Ненашев В.А., доцент, канд. техн. наук, доцент</option><option value="3049">Ненашев С.А., ассистент</option><option value="38652">Нефедов В.Г., доцент, канд. техн. наук, доцент</option><option value="3383">Низяева Ю.Д., ассистент</option><option value="40140">Никитин А.В., доцент, канд. техн. наук, доцент</option><option value="2724">Николаева Е.А., доцент, канд. техн. наук</option><option value="2687">Николаев Д.А., доцент, канд. техн. наук</option><option value="39580">Новикова Ю.А., доцент, канд. физ.-мат. наук, доцент</option><option value="3719">Новицкая В.А., ассистент</option><option value="40038">Новицкая Е.В., старший преподаватель</option><option value="3653">Носков И.К., доцент, канд. техн. наук</option><option value="2961">Нуйя О.С., доцент, канд. техн. наук</option><option value="3605">Обухов И.В., старший преподаватель</option><option value="39460">Овсянников Е.П., доцент, канд. техн. наук, доцент</option><option value="38904">Овчинников А.А., доцент, канд. техн. наук, доцент</option><option value="38798">Овчинникова Н.А., заведующий кафедрой, канд. техн. наук, доцент</option><option value="3135">Озолинг А.Е., старший преподаватель</option><option value="39766">Окин П.А., старший преподаватель</option><option value="39412">Оленев В.Л., заведующий кафедрой, канд. техн. наук, доцент</option><option value="39645">Опалихина О.В., доцент, канд. техн. наук, доцент</option><option value="3392">Орешникова К.С., преподаватель</option><option value="2939">Орлова Е.А., ассистент</option><option value="38629">Орлов С.В., профессор, д-р филос. наук, профессор</option><option value="442">Осташов А.С., ассистент</option><option value="39936">Охтилев М.Ю., заведующий кафедрой, д-р техн. наук, профессор</option><option value="2749">Охтилев П.А., доцент, канд. техн. наук</option><option value="3707">Павлов А.А., ассистент</option><option value="39842">Павлова М.Н., старший преподаватель</option><option value="39694">Павлов А.М., старший преподаватель</option><option value="40014">Павлов Е.В., старший преподаватель</option><option value="2167">Параскун А.С., старший преподаватель</option><option value="2825">Пастухова Е.В., доцент, канд. техн. наук, доцент</option><option value="2879">Пелевин А.Е., профессор, д-р техн. наук</option><option value="39666">Перельман М.Б., старший преподаватель</option><option value="2859">Перепелкин Е.А., профессор, д-р техн. наук, профессор</option><option value="39154">Перлюк В.В., доцент, канд. техн. наук, доцент</option><option value="38709">Перминов В.О., доцент, канд. филол. наук, доцент</option><option value="39295">Песоцкий А.Б., доцент, канд. техн. наук</option><option value="3529">Петров А.А., ассистент</option><option value="3107">Петров А.Ю., ассистент</option><option value="3134">Петров Г.А., доцент, канд. техн. наук</option><option value="3518">Петров Г.Г., ассистент</option><option value="39072">Петров П.Н., профессор, д-р техн. наук, профессор</option><option value="3002">Петухова Е.А., старший преподаватель</option><option value="38901">Пешкова Г.Ю., профессор, д-р экон. наук, профессор</option><option value="38774">Пиддубривная А.Ю., доцент, канд. юрид. наук, доцент</option><option value="39783">Пилина И.Б., доцент, канд. пед. наук, доцент</option><option value="39084">Писаренок Д.А., старший преподаватель</option><option value="3618">Пичугина Н.Ю., ассистент</option><option value="39372">Пичугин Ю.А., профессор, д-р физ.-мат. наук, доцент</option><option value="39498">Плотникова В.А., старший преподаватель</option><option value="38638">Плотникова С.С., доцент, канд. пед. наук, доцент</option><option value="2803">Плотников Г.А., старший преподаватель</option><option value="38753">Плотянская М.А., доцент, канд. техн. наук, доцент</option><option value="39182">Поддубный С.С., доцент, канд. техн. наук, доцент</option><option value="2358">Пойманова Е.Д., доцент, канд. техн. наук, доцент</option><option value="2719">Положенцев Д.С., старший преподаватель</option><option value="2386">Полонский А.М., доцент, канд. техн. наук, доцент</option><option value="39614">Поляк М.Д., старший преподаватель</option><option value="38790">Полякова Т.Г., доцент, канд. техн. наук</option><option value="38457">Поляков В.Б., профессор, д-р техн. наук, доцент</option><option value="2741">Поляков О.М., доцент, канд. техн. наук</option><option value="39202">Помыткин С.П., профессор, д-р физ.-мат. наук, доцент</option><option value="2703">Попов А.А., доцент, канд. техн. наук</option><option value="2903">Попов Д.А., доцент, канд. физ.-мат. наук</option><option value="39499">Привалов К.В., профессор, д-р юрид. наук, профессор</option><option value="2509">Пригода Г.С., доцент, канд. пед. наук</option><option value="39034">Прилипко В.К., доцент, канд. физ.-мат. наук, доцент</option><option value="3413">Приходский А.А., ассистент</option><option value="39541">Прокофьева Т.Л., старший преподаватель</option><option value="39131">Протопопов И.А., доцент, канд. филос. наук, доцент</option><option value="3068">Прошкин С.С., доцент, канд. техн. наук, доцент</option><option value="39252">Прусов А.В., доцент, канд. техн. наук, старший научный сотрудник</option><option value="3696">Пунченко П.Б., старший преподаватель</option><option value="2280">Пусурманов Г.В., доцент, канд. юрид. наук, доцент</option><option value="39503">Путилова Н.В., старший преподаватель</option><option value="3587">Пученков А.С., профессор, д-р ист. наук</option><option value="2497">Пушкина В.П., доцент, канд. экон. наук</option><option value="3591">Раскопина А.С., ассистент</option><option value="3067">Рассыхаева М.Д., старший преподаватель</option><option value="3112">Ревунов Г.М., ассистент</option><option value="3753">Реутова Е.Н., преподаватель</option><option value="39816">Решетникова Н.В., доцент, канд. техн. наук</option><option value="39019">Решетникова Н.Н., доцент, канд. техн. наук, доцент</option><option value="3673">Решетников Д.В., доцент, канд. техн. наук, доцент</option><option value="3762">Решетников Д.С., ассистент</option><option value="39183">Решетов Л.А., доцент, канд. техн. наук</option><option value="39853">Роблес Э.А.-., старший преподаватель</option><option value="39647">Рогачев С.А., старший преподаватель</option><option value="40077">Родина И.А., старший преподаватель</option><option value="39880">Романова И.В., заведующий кафедрой, канд. экон. наук, доцент</option><option value="3042">Романова Ю.С., доцент, канд. техн. наук, доцент</option><option value="3427">Рубинов В.В., почасовая нагрузка</option><option value="39933">Рудакова Л.В., доцент, канд. экон. наук, доцент</option><option value="3656">Рудаков М.А., ассистент</option><option value="38504">Рудая Е.А., доцент, канд. филол. наук</option><option value="3099">Рудницкий С.Б., профессор, д-р техн. наук</option><option value="3651">Рулев А.М., ассистент</option><option value="38789">Рутьков Е.В., профессор, д-р физ.-мат. наук, профессор</option><option value="3737">Рывкина Я.А., ассистент</option><option value="2653">Рыжиков М.Б., доцент, канд. техн. наук, младший научный сотрудник</option><option value="3022">Рыжова А.В., доцент, канд. экон. наук</option><option value="3035">Рыжов К.Ю., ассистент</option><option value="2871">Рындюк В.А., доцент, канд. техн. наук, доцент</option><option value="2740">Рысин А.В., старший преподаватель</option><option value="3669">Савельева Д.Д., ассистент</option><option value="40133">Савельев А.И., доцент, канд. техн. наук</option><option value="2275">Савельев Н.В., доцент, канд. техн. наук</option><option value="39385">Савинов М.В., старший преподаватель</option><option value="3139">Савочкин П.В., доцент, канд. техн. наук, доцент</option><option value="3581">Савченко В.И., профессор, канд. техн. наук, профессор</option><option value="3513">Саенко В.И., доцент, канд. техн. наук, доцент</option><option value="2639">Сакова Н.В., доцент, канд. техн. наук, доцент</option><option value="39027">Самойлов А.В., профессор, д-р экон. наук, профессор</option><option value="39282">Самохина Т.О., старший преподаватель</option><option value="39686">Санкина А.С., старший преподаватель</option><option value="2582">Саута О.И., профессор, д-р техн. наук</option><option value="2615">Сафонов В.Н., доцент, канд. юрид. наук, доцент</option><option value="2964">Сафронова А.А., старший преподаватель</option><option value="3550">Сахабудинов Р.В., доцент, канд. техн. наук, доцент</option><option value="3749">Свеженин И.Д., ассистент</option><option value="2722">Свинарчук А.А., доцент, канд. техн. наук</option><option value="3716">Свистов А.С., профессор, профессор</option><option value="2685">Секацкий А.К., доцент, канд. филос. наук, доцент</option><option value="39022">Семененко Т.В., старший преподаватель</option><option value="39509">Семенова В.А., доцент, канд. экон. наук, доцент</option><option value="3164">Семенова В.В., доцент, канд. юрид. наук</option><option value="39334">Семенов А.В., старший преподаватель</option><option value="3738">Семенов В.А., ассистент</option><option value="3504">Семин С.Ю., доцент, канд. техн. наук</option><option value="2889">Семушина В.А., доцент, канд. филол. наук</option><option value="38766">Сергеева Е.И., доцент, канд. юрид. наук, доцент</option><option value="38836">Сергеев А.М., доцент, канд. техн. наук, доцент</option><option value="38837">Сергеев М.Б., заведующий кафедрой, д-р техн. наук, профессор</option><option value="2725">Сергеев Т.В., доцент, канд. биол. наук</option><option value="2898">Сердюк К.В., старший преподаватель</option><option value="2919">Сержантова М.В., доцент, канд. техн. наук, доцент</option><option value="2373">Сериков С.А., профессор, д-р техн. наук, доцент</option><option value="38712">Сидоренко А.С., доцент, канд. пед. наук, доцент</option><option value="2010">Сидоренко В.П., профессор, д-р ист. наук, профессор</option><option value="40071">Сикерина Д.И., доцент, канд. физ.-мат. наук</option><option value="38927">Силяков Е.В., доцент, канд. техн. наук</option><option value="39789">Синёв Н.И., старший преподаватель</option><option value="38788">Сироткин В.Б., профессор, д-р экон. наук, профессор</option><option value="2804">Скворода Д.В., старший преподаватель</option><option value="2054">Скобельцына А.С., доцент, канд. культурологии, доцент</option><option value="3582">Скобцов В.Ю., доцент, канд. техн. наук, доцент</option><option value="2374">Скобцов Ю.А., профессор, д-р техн. наук, профессор</option><option value="39473">Скориантов Н.Н., доцент, канд. техн. наук, доцент</option><option value="38778">Скорина С.Ф., доцент, канд. техн. наук, доцент</option><option value="40142">Скуратов В.В., Начальник военного учебного центра при ГУАП</option><option value="39672">Слободчиков Н.А., профессор, канд. воен. наук, профессор</option><option value="38925">Слуцкая Н.Ю., старший преподаватель</option><option value="2664">Слюсаренко А.С., доцент, канд. техн. наук, доцент</option><option value="3710">Смирнова А.Д., преподаватель</option><option value="39616">Смирнова А.С., старший преподаватель</option><option value="3572">Смирнова В.А., преподаватель</option><option value="40109">Смирнова В.О., доцент, канд. техн. наук, доцент</option><option value="39551">Смирнов А.О., заведующий кафедрой, д-р физ.-мат. наук, доцент</option><option value="39209">Смирнова Т.М., профессор, д-р ист. наук, профессор</option><option value="40031">Смусева О.П., старший преподаватель</option><option value="39667">Снетов С.С., доцент, канд. экон. наук</option><option value="40137">Совина А.Р., ассистент</option><option value="3761">Соколова К.Д., ассистент</option><option value="39910">Соколова О.Л., доцент, канд. экон. наук, доцент</option><option value="39924">Солёная О.Я., доцент, канд. техн. наук, доцент</option><option value="38627">Соловьева Н.А., старший преподаватель</option><option value="38551">Соловьева Т.Н., доцент, канд. техн. наук</option><option value="3743">Сосновский Е.С., преподаватель</option><option value="2646">Состина Е.В., доцент, канд. техн. наук, доцент</option><option value="842">Сотников А.В., ассистент</option><option value="2938">Статкевич А.В., старший преподаватель</option><option value="39966">Степанов А.Г., профессор, д-р пед. наук, доцент</option><option value="39646">Степанов В.Е., старший преподаватель</option><option value="2176">Степанов Н.В., старший преподаватель</option><option value="39108">Степанов П.А., доцент, канд. техн. наук</option><option value="39024">Стерликова А.А., доцент, канд. ист. наук, доцент</option><option value="38821">Суворова Е.А., доцент, канд. техн. наук, доцент</option><option value="2977">Сугак Д.В., доцент, канд. физ.-мат. наук</option><option value="39811">Суетина Т.А., старший преподаватель</option><option value="39617">Сумбарова Я.О., доцент, канд. экон. наук, доцент</option><option value="2642">Сумманен А.В., доцент, канд. техн. наук, доцент</option><option value="811">Сысоев Ф.И., ассистент</option><option value="38622">Сыщиков А.Ю., старший преподаватель</option><option value="3606">Талыбова Р.Р., преподаватель</option><option value="40022">Таратун В.Е., доцент, канд. техн. наук</option><option value="2897">Таратун Е.А., старший преподаватель</option><option value="38972">Татарникова Т.М., профессор, д-р техн. наук, профессор</option><option value="2677">Терещенко Г.В., доцент, канд. физ.-мат. наук, доцент</option><option value="2863">Терещенко Е.Р., старший преподаватель</option><option value="39005">Теук И.Г., старший преподаватель</option><option value="3768">Тимаев И.А., ассистент</option><option value="39752">Тимофеева И.В., доцент, канд. юрид. наук, доцент</option><option value="38835">Тимофеев К.Н., доцент, канд. техн. наук</option><option value="39943">Тимофеев С.С., старший преподаватель</option><option value="3644">Тимощук А.В., ассистент</option><option value="2891">Тимощук А.С., доцент, канд. техн. наук, доцент</option><option value="39564">Титова А.В., доцент, канд. экон. наук</option><option value="3763">Титова Г.В., доцент, канд. техн. наук</option><option value="39468">Титова М.Н., профессор, д-р экон. наук, профессор</option><option value="3069">Титов В.Е., старший преподаватель</option><option value="39081">Тихоненкова О.В., заведующий кафедрой, канд. техн. наук, доцент</option><option value="38599">Толмачев С.Г., заведующий кафедрой, канд. техн. наук</option><option value="3156">Толстых В.Н., доцент, канд. техн. наук</option><option value="3692">Треполовский П.А., ассистент</option><option value="39012">Трофимов А.Н., доцент, канд. техн. наук, доцент</option><option value="39335">Трофимова Н.Н., доцент, канд. экон. наук, доцент</option><option value="2049">Трояновский Б.К., старший преподаватель</option><option value="38913">Трубенева С.Н., старший преподаватель</option><option value="3138">Тубелис Р.Ю., доцент, канд. экон. наук</option><option value="38804">Туманова А.В., доцент, канд. техн. наук</option><option value="2922">Туманов А.Ю., доцент, канд. техн. наук, доцент</option><option value="2156">Тупысев В.А., профессор, д-р техн. наук</option><option value="40069">Тур А.С., старший преподаватель</option><option value="39410">Турнецкая Е.Л., доцент, канд. техн. наук</option><option value="631">Турянская К.А., старший преподаватель</option><option value="38831">Тюрликов А.М., заведующий кафедрой, д-р техн. наук, профессор</option><option value="39821">Уголков С.В., доцент, канд. воен. наук, доцент</option><option value="2855">Удахина С.В., доцент, канд. экон. наук, доцент</option><option value="3703">Урбанович А.И., ассистент</option><option value="2385">Уренцев А.В., старший преподаватель</option><option value="2748">Ускова Н.И., старший преподаватель</option><option value="2361">Ушаков В.А., доцент, канд. техн. наук</option><option value="39098">Фарафонов В.Г., профессор, д-р физ.-мат. наук, профессор</option><option value="2656">Фаткиева Р.Р., доцент, канд. техн. наук, доцент</option><option value="39219">Федоренко А.Г., доцент, канд. техн. наук, доцент</option><option value="3081">Федоринов А.Ю., старший преподаватель</option><option value="39974">Федорова Л.А., доцент, канд. техн. наук, доцент</option><option value="39610">Федоров И.Р., доцент, канд. техн. наук, доцент</option><option value="3461">Федосеева С.Н., ассистент</option><option value="39376">Федченко В.Г., доцент, канд. техн. наук, доцент</option><option value="39142">Фетисов В.А., заведующий кафедрой, д-р техн. наук, профессор</option><option value="38954">Филатов В.Н., доцент, канд. техн. наук, доцент</option><option value="2505">Филимонова Е.Г., доцент, канд. экон. наук, доцент</option><option value="3695">Филин А.Г., доцент, канд. техн. наук</option><option value="39250">Филин А.Д., профессор, д-р техн. наук, доцент</option><option value="64364">Филиппов А.А., ассистент</option><option value="39015">Филиппов А.А., профессор, д-р техн. наук, профессор</option><option value="39000">Филонов О.М., доцент, канд. техн. наук, доцент</option><option value="38489">Фоменкова А.А., доцент, канд. техн. наук</option><option value="38653">Фомин А.В., доцент, канд. техн. наук</option><option value="38958">Фомина И.К., доцент, канд. техн. наук, доцент</option><option value="2870">Фомин В.В., профессор, д-р техн. наук, профессор</option><option value="2781">Фомичева С.Г., профессор, канд. техн. наук, профессор</option><option value="2021">Фомичева Т.И., доцент, канд. техн. наук, доцент</option><option value="39016">Фридман Б.Э., профессор, д-р техн. наук</option><option value="3091">Фридман Л.Б., профессор, д-р техн. наук</option><option value="3765">Хайретдинова Д.Д., ассистент</option><option value="2623">Харитонов Л.А., доцент, канд. юрид. наук</option><option value="3503">Харченко О.В., профессор, канд. юрид. наук, профессор</option><option value="39159">Хейфец В.Л., профессор, д-р ист. наук, профессор</option><option value="39120">Хейфец Л.С., профессор, д-р ист. наук, доцент</option><option value="39302">Хоменко А.А., доцент, канд. техн. наук, доцент</option><option value="2997">Ху М.-., доцент, канд. экон. наук</option><option value="3563">Хуцаева А.Ф., ассистент</option><option value="38555">Царев Ю.Н., доцент, канд. физ.-мат. наук, доцент</option><option value="38966">Целмс Р.Н., доцент, канд. техн. наук</option><option value="3061">Цихон Г.Ф.Э.Й., доцент, канд. техн. наук</option><option value="39928">Цмай В.В., профессор, д-р юрид. наук, профессор</option><option value="2620">Цурков С.А., доцент, канд. техн. наук</option><option value="39753">Чабаненко А.В., доцент, канд. техн. наук, доцент</option><option value="3094">Чепенко Я.К., доцент, канд. юрид. наук</option><option value="39215">Черепков Е.В., доцент, канд. экон. наук, доцент</option><option value="39847">Чернышева О.Б., старший преподаватель</option><option value="39684">Чернышев С.А., доцент, канд. техн. наук</option><option value="34171">Черских Е.О, старший преподаватель, к.т.н.</option><option value="2905">Чигринец В.С., старший преподаватель</option><option value="39992">Чистов Е.И., старший преподаватель</option><option value="39588">Чиханова М.А., доцент, канд. филол. наук, доцент</option><option value="2985">Чудопал Д.С., преподаватель</option><option value="39829">Чумакова Н.Ю., старший преподаватель</option><option value="3093">Чупринова О.В., старший преподаватель</option><option value="2716">Чхинджерия А.Б., доцент, канд. техн. наук</option><option value="39952">Шакин О.В., профессор, д-р техн. наук</option><option value="38759">Шарапова О.М., старший преподаватель</option><option value="38752">Шахомиров А.В., доцент, канд. техн. наук</option><option value="3576">Шахомирова Н.Е., ассистент</option><option value="2759">Шашмурин А.А., старший преподаватель</option><option value="2969">Шевяков Д.О., старший преподаватель</option><option value="3043">Шепелева С.В., доцент, канд. экон. наук, доцент</option><option value="39060">Шепета А.П., профессор, д-р техн. наук, профессор</option><option value="3097">Шеховцова Е.А., доцент, канд. филол. наук, доцент</option><option value="39807">Шехунова Н.А., профессор, канд. техн. наук, доцент</option><option value="3031">Ширяева-Бакшевникова В.Н., доцент, канд. ист. наук</option><option value="38732">Ширяев А.О., старший преподаватель</option><option value="38745">Шифрин Б.Ф., доцент, канд. физ.-мат. наук, доцент</option><option value="2366">Шишкин И.А., доцент, канд. техн. наук</option><option value="39259">Шишлаков В.Ф., заведующий кафедрой, д-р техн. наук, профессор</option><option value="39055">Шишлаков Д.В., доцент, канд. техн. наук</option><option value="3577">Шомесов Д.В., старший преподаватель, канд. юрид. наук</option><option value="3533">Шпигун П.В., ассистент</option><option value="3584">Шуликов К.А., старший преподаватель</option><option value="2636">Шумова Е.О., старший преподаватель</option><option value="3790">Щёкин С.В., доцент, канд. техн. наук, доцент</option><option value="38620">Щеников Я.А., доцент, канд. техн. наук, доцент</option><option value="3495">Щукина Д.С., ассистент</option><option value="3530">Эпаев Н.Н., ассистент</option><option value="421">Юдин И.А., ассистент</option><option value="40132">Юрьева Д.В., старший преподаватель</option><option value="3687">Юсенко Г.Р., ассистент</option><option value="39039">Яблоков Е.Н., доцент, канд. техн. наук</option><option value="3497">Язвенко М.Р., ассистент</option><option value="3101">Якимов В.Л., профессор, д-р техн. наук, доцент</option><option value="2325">Якимовский Д.О., доцент, канд. техн. наук</option><option value="38728">Яковлев А.В., доцент, канд. техн. наук, доцент</option><option value="2874">Яковлев С.И., доцент, канд. физ.-мат. наук, доцент</option><option value="39655">Якушенко С.А., профессор, д-р техн. наук, доцент</option><option value="31">Яницин Д.В., ассистент</option><option value="411">Янковский Н.А., старший преподаватель</option><option value="2651">Ян С.И., старший преподаватель</option><option value="39234">Ястребов А.П., профессор, д-р техн. наук, профессор</option><option value="3626">Яушкина М.Д., ассистент</option><option value="2847">Яфаров А.З., доцент, канд. техн. наук</option>        </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-sm-6 mb-2">
+            <label for="selChair" class="form-label mb-1">Кафедра</label>
+        <select class="form-select guap-tom-select" id="selChair" name="selChair">
+            <option value="">–нет–</option>
+<option value="12">Военный учебный центр при ГУАП</option><option value="31">Инженерная школа ГУАП</option><option value="28">Кафедра 1</option><option value="14">Кафедра 11</option><option value="9">Кафедра 12</option><option value="18">Кафедра 13</option><option value="1">Кафедра 14</option><option value="29">Кафедра 2</option><option value="6">Кафедра 21</option><option value="22">Кафедра 22</option><option value="16">Кафедра 23</option><option value="5">Кафедра 24</option><option value="20">Кафедра 25</option><option value="21">Кафедра 3</option><option value="19">Кафедра 31</option><option value="3">Кафедра 32</option><option value="10">Кафедра 33</option><option value="24">Кафедра 41</option><option value="23">Кафедра 42</option><option value="25">Кафедра 43</option><option value="4">Кафедра 44</option><option value="30">Кафедра 5</option><option value="17">Кафедра 6</option><option value="32">Кафедра 61</option><option value="26">Кафедра 62</option><option value="27">Кафедра 63</option><option value="15">Кафедра 64</option><option value="7">Кафедра 81</option><option value="2">Кафедра 82</option><option value="13">Кафедра 83</option><option value="11">Кафедра 84</option><option value="8">Кафедра 85</option><option value="33">Сетевая кафедра</option>        </select>
+        </div>
+        <div class="col-12 col-sm-6 mb-2">
+            <label for="selRoom" class="form-label mb-1">Аудитория</label>
+        <select class="form-select guap-tom-select" id="selRoom" name="selRoom">
+            <option value="">–нет–</option>
+<option value="38">&nbsp;(Б. Морская 67)</option><option value="31">11-01а&nbsp;(Б. Морская 67)</option><option value="35">11-01б&nbsp;(Б. Морская 67)</option><option value="77">11-02&nbsp;(Б. Морская 67)</option><option value="69">12-06&nbsp;(Б. Морская 67)</option><option value="63">12-07&nbsp;(Б. Морская 67)</option><option value="79">12-10&nbsp;(Б. Морская 67)</option><option value="64">12-12&nbsp;(Б. Морская 67)</option><option value="67">12-14&nbsp;(Б. Морская 67)</option><option value="55">12-29&nbsp;(Б. Морская 67)</option><option value="52">12-30&nbsp;(Б. Морская 67)</option><option value="54">12-31&nbsp;(Б. Морская 67)</option><option value="56">12-43&nbsp;(Б. Морская 67)</option><option value="76">13-03а&nbsp;(Б. Морская 67)</option><option value="75">13-03б&nbsp;(Б. Морская 67)</option><option value="73">13-04&nbsp;(Б. Морская 67)</option><option value="80">13-04а&nbsp;(Б. Морская 67)</option><option value="71">13-05&nbsp;(Б. Морская 67)</option><option value="96">13-07&nbsp;(Б. Морская 67)</option><option value="58">13-10&nbsp;(Б. Морская 67)</option><option value="32">13-12&nbsp;(Б. Морская 67)</option><option value="89">13-13&nbsp;(Б. Морская 67)</option><option value="49">13-14&nbsp;(Б. Морская 67)</option><option value="47">13-15&nbsp;(Б. Морская 67)</option><option value="39">13-16&nbsp;(Б. Морская 67)</option><option value="66">13-17&nbsp;(Б. Морская 67)</option><option value="177">14-03&nbsp;(Б. Морская 67)</option><option value="88">14-05&nbsp;(Б. Морская 67)</option><option value="107">14-06в&nbsp;(Б. Морская 67)</option><option value="78">14-06г&nbsp;(Б. Морская 67)</option><option value="102">14-06д&nbsp;(Б. Морская 67)</option><option value="81">14-06е&nbsp;(Б. Морская 67)</option><option value="30">14-07&nbsp;(Б. Морская 67)</option><option value="17">14-07б&nbsp;(Б. Морская 67)</option><option value="111">14-28&nbsp;(Б. Морская 67)</option><option value="15">14-33&nbsp;(Б. Морская 67)</option><option value="131">14-34&nbsp;(Б. Морская 67)</option><option value="115">14-50&nbsp;(Б. Морская 67)</option><option value="13">14-53&nbsp;(Б. Морская 67)</option><option value="51">14-56&nbsp;(Б. Морская 67)</option><option value="251">14-58&nbsp;(Б. Морская 67)</option><option value="122">21-05&nbsp;(Б. Морская 67)</option><option value="121">21-06&nbsp;(Б. Морская 67)</option><option value="125">21-07&nbsp;(Б. Морская 67)</option><option value="118">21-09&nbsp;(Б. Морская 67)</option><option value="213">21-10&nbsp;(Б. Морская 67)</option><option value="86">21-12&nbsp;(Б. Морская 67)</option><option value="117">21-13&nbsp;(Б. Морская 67)</option><option value="19">21-16&nbsp;(Б. Морская 67)</option><option value="5">21-18&nbsp;(Б. Морская 67)</option><option value="59">21-21&nbsp;(Б. Морская 67)</option><option value="99">22-02&nbsp;(Б. Морская 67)</option><option value="98">22-03&nbsp;(Б. Морская 67)</option><option value="100">22-06&nbsp;(Б. Морская 67)</option><option value="101">22-07&nbsp;(Б. Морская 67)</option><option value="97">22-08&nbsp;(Б. Морская 67)</option><option value="12">22-10&nbsp;(Б. Морская 67)</option><option value="10">22-13&nbsp;(Б. Морская 67)</option><option value="245">22-14&nbsp;(Б. Морская 67)</option><option value="137">22-15&nbsp;(Б. Морская 67)</option><option value="146">23-08&nbsp;(Б. Морская 67)</option><option value="148">23-09&nbsp;(Б. Морская 67)</option><option value="147">23-10&nbsp;(Б. Морская 67)</option><option value="132">23-17&nbsp;(Б. Морская 67)</option><option value="176">23-22&nbsp;(Б. Морская 67)</option><option value="128">31-01&nbsp;(Б. Морская 67)</option><option value="6">31-02&nbsp;(Б. Морская 67)</option><option value="57">31-03&nbsp;(Б. Морская 67)</option><option value="83">31-04&nbsp;(Б. Морская 67)</option><option value="123">31-05&nbsp;(Б. Морская 67)</option><option value="185">31-06&nbsp;(Б. Морская 67)</option><option value="70">32-02&nbsp;(Б. Морская 67)</option><option value="48">32-03&nbsp;(Б. Морская 67)</option><option value="9">32-04&nbsp;(Б. Морская 67)</option><option value="114">33-02&nbsp;(Б. Морская 67)</option><option value="133">33-04&nbsp;(Б. Морская 67)</option><option value="113">33-05&nbsp;(Б. Морская 67)</option><option value="145">33-07&nbsp;(Б. Морская 67)</option><option value="7">51-02в&nbsp;(Б. Морская 67)</option><option value="124">51-06-01&nbsp;(Б. Морская 67)</option><option value="229">51-06-02&nbsp;(Б. Морская 67)</option><option value="94">51-06-03&nbsp;(Б. Морская 67)</option><option value="178">51-07&nbsp;(Б. Морская 67)</option><option value="74">51-08&nbsp;(Б. Морская 67)</option><option value="16">52-03&nbsp;(Б. Морская 67)</option><option value="14">52-04&nbsp;(Б. Морская 67)</option><option value="11">52-07&nbsp;(Б. Морская 67)</option><option value="33">52-08&nbsp;(Б. Морская 67)</option><option value="8">52-09&nbsp;(Б. Морская 67)</option><option value="141">52-15&nbsp;(Б. Морская 67)</option><option value="149">52-16&nbsp;(Б. Морская 67)</option><option value="138">52-17&nbsp;(Б. Морская 67)</option><option value="255">52-18&nbsp;(Б. Морская 67)</option><option value="139">52-19&nbsp;(Б. Морская 67)</option><option value="91">52-23а&nbsp;(Б. Морская 67)</option><option value="34">52-23б&nbsp;(Б. Морская 67)</option><option value="112">52-24&nbsp;(Б. Морская 67)</option><option value="93">52-25&nbsp;(Б. Морская 67)</option><option value="1">52-33&nbsp;(Б. Морская 67)</option><option value="106">52-35&nbsp;(Б. Морская 67)</option><option value="110">52-37&nbsp;(Б. Морская 67)</option><option value="40">52-39&nbsp;(Б. Морская 67)</option><option value="18">52-42&nbsp;(Б. Морская 67)</option><option value="109">52-43&nbsp;(Б. Морская 67)</option><option value="129">52-44&nbsp;(Б. Морская 67)</option><option value="50">52-48&nbsp;(Б. Морская 67)</option><option value="84">52-49&nbsp;(Б. Морская 67)</option><option value="208">52-50&nbsp;(Б. Морская 67)</option><option value="179">52-51&nbsp;(Б. Морская 67)</option><option value="250">52-53&nbsp;(Б. Морская 67)</option><option value="252">52-53а&nbsp;(Б. Морская 67)</option><option value="46">53-04&nbsp;(Б. Морская 67)</option><option value="256">53-07&nbsp;(Б. Морская 67)</option><option value="140">53-09&nbsp;(Б. Морская 67)</option><option value="68">53-10&nbsp;(Б. Морская 67)</option><option value="175">54-01&nbsp;(Б. Морская 67)</option><option value="174">54-06&nbsp;(Б. Морская 67)</option><option value="65">спортзал&nbsp;(Б. Морская 67)</option><option value="37">&nbsp;(вне сетки)</option><option value="168">11-05&nbsp;(Гастелло 15)</option><option value="219">11-06&nbsp;(Гастелло 15)</option><option value="211">12-01&nbsp;(Гастелло 15)</option><option value="249">12-02&nbsp;(Гастелло 15)</option><option value="247">12-03&nbsp;(Гастелло 15)</option><option value="194">12-04&nbsp;(Гастелло 15)</option><option value="172">12-05&nbsp;(Гастелло 15)</option><option value="200">12-06&nbsp;(Гастелло 15)</option><option value="195">12-08&nbsp;(Гастелло 15)</option><option value="193">13-03&nbsp;(Гастелло 15)</option><option value="226">13-09&nbsp;(Гастелло 15)</option><option value="233">13-10&nbsp;(Гастелло 15)</option><option value="192">13-12&nbsp;(Гастелло 15)</option><option value="180">13-15&nbsp;(Гастелло 15)</option><option value="36">14-02&nbsp;(Гастелло 15)</option><option value="205">14-03&nbsp;(Гастелло 15)</option><option value="201">14-04&nbsp;(Гастелло 15)</option><option value="181">14-05&nbsp;(Гастелло 15)</option><option value="199">14-06&nbsp;(Гастелло 15)</option><option value="246">14-10&nbsp;(Гастелло 15)</option><option value="171">22-03&nbsp;(Гастелло 15)</option><option value="170">22-04&nbsp;(Гастелло 15)</option><option value="173">22-06&nbsp;(Гастелло 15)</option><option value="203">22-07&nbsp;(Гастелло 15)</option><option value="209">22-08&nbsp;(Гастелло 15)</option><option value="204">22-09&nbsp;(Гастелло 15)</option><option value="169">22-10&nbsp;(Гастелло 15)</option><option value="92">22-11&nbsp;(Гастелло 15)</option><option value="103">22-13&nbsp;(Гастелло 15)</option><option value="155">24-01&nbsp;(Гастелло 15)</option><option value="225">24-02&nbsp;(Гастелло 15)</option><option value="198">24-03&nbsp;(Гастелло 15)</option><option value="197">24-05&nbsp;(Гастелло 15)</option><option value="151">24-06&nbsp;(Гастелло 15)</option><option value="227">24-08&nbsp;(Гастелло 15)</option><option value="207">24-09&nbsp;(Гастелло 15)</option><option value="105">24-10&nbsp;(Гастелло 15)</option><option value="104">24-11&nbsp;(Гастелло 15)</option><option value="167">24-12&nbsp;(Гастелло 15)</option><option value="220">24-14&nbsp;(Гастелло 15)</option><option value="150">24-16&nbsp;(Гастелло 15)</option><option value="215">31-02&nbsp;(Гастелло 15)</option><option value="90">31-03&nbsp;(Гастелло 15)</option><option value="95">31-04а&nbsp;(Гастелло 15)</option><option value="237">31-04б&nbsp;(Гастелло 15)</option><option value="238">31-04в&nbsp;(Гастелло 15)</option><option value="244">32-01&nbsp;(Гастелло 15)</option><option value="241">32-02&nbsp;(Гастелло 15)</option><option value="234">32-03&nbsp;(Гастелло 15)</option><option value="235">32-04&nbsp;(Гастелло 15)</option><option value="189">32-05&nbsp;(Гастелло 15)</option><option value="236">32-06&nbsp;(Гастелло 15)</option><option value="242">33-02&nbsp;(Гастелло 15)</option><option value="152">33-03&nbsp;(Гастелло 15)</option><option value="243">33-04&nbsp;(Гастелло 15)</option><option value="156">33-05&nbsp;(Гастелло 15)</option><option value="214">33-06&nbsp;(Гастелло 15)</option><option value="239">33-07&nbsp;(Гастелло 15)</option><option value="228">33-08&nbsp;(Гастелло 15)</option><option value="82">33-09&nbsp;(Гастелло 15)</option><option value="221">34-02&nbsp;(Гастелло 15)</option><option value="223">34-03&nbsp;(Гастелло 15)</option><option value="202">34-04&nbsp;(Гастелло 15)</option><option value="218">34-05&nbsp;(Гастелло 15)</option><option value="216">34-06&nbsp;(Гастелло 15)</option><option value="230">34-07&nbsp;(Гастелло 15)</option><option value="232">34-08&nbsp;(Гастелло 15)</option><option value="182">34-09&nbsp;(Гастелло 15)</option><option value="183">34-10&nbsp;(Гастелло 15)</option><option value="217">34-12&nbsp;(Гастелло 15)</option><option value="190">34-13&nbsp;(Гастелло 15)</option><option value="240">34-18&nbsp;(Гастелло 15)</option><option value="231">с-34&nbsp;(Гастелло 15)</option><option value="154">с-36&nbsp;(Гастелло 15)</option><option value="254">&nbsp;(Дистант)</option><option value="108">&nbsp;(Ивана Черных 33-34)</option><option value="166">11-08&nbsp;(Ленсовета 14)</option><option value="222">12-07&nbsp;(Ленсовета 14)</option><option value="165">12-08&nbsp;(Ленсовета 14)</option><option value="61">12-09&nbsp;(Ленсовета 14)</option><option value="186">12-14&nbsp;(Ленсовета 14)</option><option value="184">12-15&nbsp;(Ленсовета 14)</option><option value="164">12-19&nbsp;(Ленсовета 14)</option><option value="20">13-03&nbsp;(Ленсовета 14)</option><option value="135">13-04&nbsp;(Ленсовета 14)</option><option value="119">13-05&nbsp;(Ленсовета 14)</option><option value="159">13-06&nbsp;(Ленсовета 14)</option><option value="72">13-07&nbsp;(Ленсовета 14)</option><option value="126">13-19&nbsp;(Ленсовета 14)</option><option value="158">14-05&nbsp;(Ленсовета 14)</option><option value="2">14-06&nbsp;(Ленсовета 14)</option><option value="4">14-07&nbsp;(Ленсовета 14)</option><option value="163">14-08&nbsp;(Ленсовета 14)</option><option value="143">14-09&nbsp;(Ленсовета 14)</option><option value="142">14-10&nbsp;(Ленсовета 14)</option><option value="144">14-11&nbsp;(Ленсовета 14)</option><option value="44">14-14&nbsp;(Ленсовета 14)</option><option value="3">14-15&nbsp;(Ленсовета 14)</option><option value="134">21-04&nbsp;(Ленсовета 14)</option><option value="248">21-08&nbsp;(Ленсовета 14)</option><option value="136">21-11&nbsp;(Ленсовета 14)</option><option value="28">22-02&nbsp;(Ленсовета 14)</option><option value="24">22-04&nbsp;(Ленсовета 14)</option><option value="161">22-06&nbsp;(Ленсовета 14)</option><option value="25">22-07&nbsp;(Ленсовета 14)</option><option value="27">22-09&nbsp;(Ленсовета 14)</option><option value="153">22-14&nbsp;(Ленсовета 14)</option><option value="85">22-16&nbsp;(Ленсовета 14)</option><option value="62">23-01&nbsp;(Ленсовета 14)</option><option value="21">23-02&nbsp;(Ленсовета 14)</option><option value="60">23-04&nbsp;(Ленсовета 14)</option><option value="22">23-06&nbsp;(Ленсовета 14)</option><option value="120">23-09&nbsp;(Ленсовета 14)</option><option value="23">23-12&nbsp;(Ленсовета 14)</option><option value="53">24-03&nbsp;(Ленсовета 14)</option><option value="162">24-06&nbsp;(Ленсовета 14)</option><option value="87">24-10&nbsp;(Ленсовета 14)</option><option value="26">24-13&nbsp;(Ленсовета 14)</option><option value="160">24-16&nbsp;(Ленсовета 14)</option><option value="42">32-01&nbsp;(Ленсовета 14)</option><option value="29">32-04&nbsp;(Ленсовета 14)</option><option value="43">32-11&nbsp;(Ленсовета 14)</option><option value="188">32-13&nbsp;(Ленсовета 14)</option><option value="187">33-07&nbsp;(Ленсовета 14)</option><option value="41">33-08&nbsp;(Ленсовета 14)</option><option value="224">33-09&nbsp;(Ленсовета 14)</option><option value="130">34-04&nbsp;(Ленсовета 14)</option><option value="45">34-05&nbsp;(Ленсовета 14)</option><option value="157">спортзал&nbsp;(Ленсовета 14)</option><option value="206">&nbsp;(Маршала Тухачевского 22)</option><option value="210">116&nbsp;(Московский 149)</option><option value="212">406&nbsp;(Московский 149)</option><option value="196">410&nbsp;(Московский 149)</option><option value="253">411&nbsp;(Московский 149)</option><option value="127">416&nbsp;(Московский 149)</option><option value="191">417&nbsp;(Московский 149)</option><option value="116">01&nbsp;(Петроградская наб.,38А)</option>        </select>
+        </div>
+    </div>
+    <div class="mt-3 d-flex gap-2">
+        <button id="btnSearch" type="button" class="btn btn-primary">Показать расписание</button>
+        <a class="btn btn-outline-secondary" href="?">Очистить</a>
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://src.guap.ru/libs/tom-select/2.4.2/src/css/tom-select.bootstrap5.css">
+<style>
+    .ts-wrapper>.ts-control>.item {
+        line-height: 1.1;
+    }
+
+    .ts-wrapper.multi>.ts-control>.item {
+        padding: .3rem .4rem .4rem .4rem;
+    }
+</style>
+
+<script src="https://src.guap.ru/libs/tom-select/2.4.2/src/js/tom-select.complete.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        var ts_config1 = {
+            plugins: ['remove_button'],
+            maxOptions: null,
+            render: {
+                no_results: function (data, escape) {
+                    return '<div class="no-results">Не найдено</div>';
+                },
+            },
+            onItemAdd: function () {
+                this.setTextboxValue('');
+            }
+        };
+        document.querySelectorAll('.guap-tom-select').forEach((e1, i1) => {
+            let ts1 = new TomSelect(e1, ts_config1);
+        });
+    });
+</script>
+
+<script>
+
+    const
+        selGroup = document.getElementById('selGroup'),
+        selPrep = document.getElementById('selPrep'),
+        selChair = document.getElementById('selChair'),
+        selRoom = document.getElementById('selRoom'),
+        btnSearch = document.getElementById('btnSearch');
+
+    btnSearch.addEventListener("click", () => {
+        let
+            url1 = window.location.href.split('?')[0],
+            params1 = '?';
+        if (selGroup.value)
+            params1 += `gr=${selGroup.value}&`;
+        if (selPrep.value)
+            params1 += `pr=${selPrep.value}&`;
+        if (selChair.value)
+            params1 += `ch=${selChair.value}&`;
+        if (selRoom.value)
+            params1 += `ad=${selRoom.value}&`;
+        if (params1 != '?') {
+            window.location.href = `${url1}${params1.slice(0, -1)}`;
+        }
+    });
+
+    function toForm() {
+        const form1 = document.getElementById('form');
+        window.scrollTo({
+            top: form1.offsetTop,
+            behavior: 'smooth'
+        });
+    }
+
+</script>
+
+
+
+
+		</div>
+		
+	</main>
+
+
+	<div class="mt-auto">
+
+
+			
+<style>
+	#guap_footer {
+		font-size: 17px;
+	}
+
+	#guap_footer a {
+		color: #fff;
+		opacity: .5;
+	}
+
+	#guap_footer a:hover,
+	#guap_footer a:focus {
+		opacity: 1;
+	}
+
+	#guap_footer_contacts h4 {
+		margin: 0 0 .2em 0;
+		font-size: .9em;
+		opacity: .5;
+		font-weight: 400;
+	}
+
+	#guap_footer_contacts a {
+		opacity: 1;
+	}
+
+	#guap_footer_nav h4 {
+		margin: 0 0 1em 0;
+		font-size: 1.3em;
+		font-weight: 400;
+	}
+
+	#guap_footer_nav .nav {
+		flex-direction: column;
+		gap: 1em;
+	}
+
+	#guap_footer_nav .nav>a {
+		font-size: .9em;
+		line-height: 1.3;
+	}
+
+	#guap_footer_social .nav {
+		gap: 1.5em;
+	}
+
+	#guap_footer_social .nav>a {
+		font-size: 1.6em;
+		opacity: .75;
+	}
+
+	#guap_footer_social a:hover,
+	#guap_footer_social a:focus {
+		opacity: 1;
+	}
+</style>
+
+<div id="guap_footer" class="py-5 text-light" style="background-color: #003666;">
+
+	<div class="container">
+
+		<div class="mb-5">
+			<img class="img-fluid" style="max-height: 4em;" src="https://src.guap.ru/logos/guap/guap-desc-line_w.svg" alt="ФГАОУ ВО «Санкт-Петербургский государственный университет аэрокосмического приборостроения»" />
+		</div>
+
+		<div class="row">
+
+			<div id="guap_footer_nav" class="col-12 col-lg-8 order-1">
+
+				<div class="row row-cols-2 row-cols-xl-4 gy-5">
+
+					<div class="col">
+						<h4>Университет</h4>
+						<nav class="nav">
+							<a href="/sveden">Сведения об&nbsp;образовательной организации</a>
+							<a href="/struct">Структура</a>
+							<a href="https://guap.ru/sveden/common#address">Корпуса и&nbsp;общежития</a>
+							<a href="https://pro.guap.ru/professors">Преподаватели и&nbsp;сотрудники</a>
+							<a href="https://guap.ru/sveden/pdn/policy">Политика обработки персональных данных</a>
+						</nav>
+					</div>
+
+					<div class="col">
+						<h4>Образование</h4>
+						<nav class="nav">
+							<a href="https://guap.ru/profor/study/class">Довузовское</a>
+							<a href="/fspo">Среднее профессиональное</a>
+							<a href="https://guap.ru/sveden/education/tab1#level1">Высшее</a>
+							<a href="/aspira">Аспирантура и&nbsp;докторантура</a>
+							<a href="/fdpo">Дополнительное профессиональное</a>
+						</nav>
+					</div>
+
+					<div class="col">
+						<h4>Деятельность</h4>
+						<nav class="nav">
+							<a href="/inter">Международная</a>
+							<a href="/science">Научная и&nbsp;инновационная</a>
+							<a href="/eif">Финансово-экономическая</a>
+							<a href="/vrmp">Воспитательная работа и&nbsp;молодежная политика</a>
+							<a href="/profor">Профориентация школьников</a>
+						</nav>
+					</div>
+
+					<div class="col">
+						<h4>Ресурсы</h4>
+						<nav class="nav">
+							<a href="/sitemap">Карта сайта</a>
+							<a href="/media">Медиаплощадки</a>
+							<a href="/smi">СМИ о ГУАП</a>
+							<a href="https://guap.ru/sveden/site">Информация для лиц с&nbsp;ОВЗ</a>
+							<a href="/faq">Вопросы и ответы</a>
+						</nav>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div id="guap_footer_contacts" class="col-12 col-lg-4 order-2 order-lg-0">
+				<hr class="d-lg-none mt-5" />
+				<div class="d-flex flex-column gap-3" style="max-width: 20em;">
+					<div>
+						<h4>Почтовый адрес:</h4>
+						<div>190000, Россия, <nobr>Санкт-Петербург</nobr>, <nobr>ул.&nbsp;Большая Морская</nobr>, <nobr>д.&nbsp;67</nobr>,&nbsp;ГУАП</div>
+					</div>
+					<div>
+						<h4>Приемная комиссия:</h4>
+						<div>
+							<a target="_blank" href="https://priem.guap.ru">https://priem.guap.ru</a>,
+							<a href="tel:+78123122107" itemprop="telephone" class="link-telephone text-nowrap">+7-812-312-21-07</a>,
+							<a href="mailto:priem@guap.ru" itemprop="email" class="link-email text-nowrap">priem@guap.ru</a>
+						</div>
+					</div>
+					<div>
+						<h4>Отдел делопроизводства:</h4>
+						<div>
+							<a href="tel:+78124947005" itemprop="telephone" class="link-telephone text-nowrap">+7-812-494-70-05</a>,
+							<a href="tel:+78124947057" itemprop="telephone" class="link-telephone text-nowrap">+7-812-494-70-57 (факс)</a>,
+							<a href="mailto:info@guap.ru" itemprop="email" class="link-email text-nowrap">info@guap.ru</a>
+						</div>
+					</div>
+					<div>
+						<h4>Управление информационно-стратегических коммуникаций&nbsp;и&nbsp;рекламы:</h4>
+						<div>
+							<a href="mailto:pr@guap.ru" itemprop="email" class="link-email text-nowrap">pr@guap.ru</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div id="guap_footer_social" class="mt-5">
+			<div class="d-flex flex-wrap justify-content-lg-end">
+				<nav class="nav">
+					<a target="_blank" href="https://max.ru/guap_ru" title="МАХ"><i class="gi-logo-max1"></i></a>
+					<a target="_blank" href="https://vk.com/guap_ru" title="ВКонтакте"><i class="gi-logo-vk"></i></a>
+					<a target="_blank" href="https://ok.ru/guapru" title="Одноклассники"><i class="gi-logo-ok"></i></a>
+					<a target="_blank" href="https://rutube.ru/channel/23832078/" title="RUTUBE"><i class="gi-logo-rutube"></i></a>
+					<a target="_blank" href="https://t.me/new_guap" title="Телеграм"><i class="gi-logo-telegram"></i></a>
+					<a target="_blank" href="https://dzen.ru/guap_ru" title="Дзен"><i class="gi-logo-dzen"></i></a>
+				</nav>
+			</div>
+			<hr />
+			<div class="d-flex flex-wrap justify-content-lg-end small opacity-75">
+				<span>Разработка сайта — <a href="/it">УЦР ГУАП</a></span>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+
+	</div>
+
+
+	<script src="https://src.guap.ru/themes/guap6/dist/theme.min.js?20260521_01"></script>
+	
+</body>
+
+</html>
