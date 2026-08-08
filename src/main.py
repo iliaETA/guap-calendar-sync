@@ -1,12 +1,24 @@
-from bs4 import BeautifulSoup
+import os
 
-with open("data/page.html", encoding="utf-8") as f:
-    html = f.read()
+import requests
+from dotenv import load_dotenv
 
-soup = BeautifulSoup(html, "html.parser")
+load_dotenv()
 
-text = soup.get_text("\n", strip=True)
+BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
-index = text.find("Понедельник")
+message = "ГУАП Sync работает ✅"
 
-print(text[index:index+3000])
+url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
+
+response = requests.post(
+    url,
+    json={
+        "chat_id": CHAT_ID,
+        "text": message,
+    },
+)
+
+print(response.status_code)
+print(response.text)
