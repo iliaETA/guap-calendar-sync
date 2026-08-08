@@ -22,6 +22,15 @@ def send_telegram(text):
     )
 
 
+def lesson_to_text(item):
+    return (
+        f"{item['day']}\n"
+        f"{item['pair']} пара ({item['start']}-{item['end']})\n"
+        f"{item['subject']}\n"
+        f"{item['room']}"
+    )
+
+
 with open("data/schedule_previous.json", encoding="utf-8") as f:
     old_schedule = json.load(f)
 
@@ -29,26 +38,38 @@ with open("data/schedule.json", encoding="utf-8") as f:
     new_schedule = json.load(f)
 
 old_set = {
-    json.dumps(item, ensure_ascii=False, sort_keys=True)
+    json.dumps(item, ensure_ascii=False, sort_keys=True): item
     for item in old_schedule
 }
 
 new_set = {
-    json.dumps(item, ensure_ascii=False, sort_keys=True)
+    json.dumps(item, ensure_ascii=False, sort_keys=True): item
     for item in new_schedule
 }
 
-added = new_set - old_set
-removed = old_set - new_set
+added_keys = set(new_set.keys()) - set(old_set.keys())
+removed_keys = set(old_set.keys()) - set(new_set.keys())
 
-if not added and not removed:
+if not added_keys and not removed_keys:
     print("Изменений нет")
+
 else:
-    message = (
-        f"Обнаружены изменения в расписании\n\n"
-        f"Добавлено: {len(added)}\n"
-        f"Удалено: {len(removed)}"
-    )
+
+    message = "🔔 Изменения в расписании\n\n"
+
+    if added_keys:
+        message += "➕ Добавлено\n\n"
+
+        for key in added_keys:
+            message += lesson_to_text(new_set[key])
+            message += "\n\n"
+
+    if removed_keys:
+        message += "➖ Удалено\n\n"
+
+        for key in removed_keys:
+            message += lesson_to_text(old_set[key])
+            message += "\n\n"
 
     send_telegram(message)
 
