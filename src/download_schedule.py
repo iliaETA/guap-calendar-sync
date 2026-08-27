@@ -1,12 +1,22 @@
-from bs4 import BeautifulSoup
+"""Download the current GUAP schedule page."""
 
-with open("data/page.html", encoding="utf-8") as f:
-    html = f.read()
+from __future__ import annotations
 
-soup = BeautifulSoup(html, "html.parser")
+import requests
 
-text = soup.get_text("\n", strip=True)
 
-index = text.find("Понедельник")
+USER_AGENT = "guap-calendar-sync/1.0 (+https://github.com/iliaETA/guap-calendar-sync)"
 
-print(text[index:index+3000])
+
+def download_schedule(url: str, timeout: int = 30) -> str:
+    response = requests.get(
+        url,
+        headers={"User-Agent": USER_AGENT, "Accept-Language": "ru-RU,ru;q=0.9"},
+        timeout=timeout,
+    )
+    response.raise_for_status()
+    response.encoding = response.apparent_encoding or "utf-8"
+    html = response.text
+    if "Расписание занятий" not in html:
+        raise ValueError("ГУАП вернул страницу без расписания")
+    return html
