@@ -5,7 +5,13 @@ from tempfile import TemporaryDirectory
 from unittest.mock import MagicMock, patch
 from zoneinfo import ZoneInfo
 
-from src.caldav_sync import DesiredEvent, RemoteEvent, build_plan, sync_to_mail_caldav
+from src.caldav_sync import (
+    DesiredEvent,
+    RemoteEvent,
+    build_plan,
+    mail_principal_url,
+    sync_to_mail_caldav,
+)
 
 
 class CalDAVPlanTests(unittest.TestCase):
@@ -96,6 +102,17 @@ class CalDAVPlanTests(unittest.TestCase):
             password="app-password",
             auth_type="basic",
         )
+        client.principal.assert_called_once_with(
+            url="https://calendar.mail.ru/principals/example.com/calendar/"
+        )
+
+    def test_mail_principal_url_requires_full_email(self):
+        self.assertEqual(
+            mail_principal_url("https://calendar.mail.ru/", "user.name@MAIL.RU"),
+            "https://calendar.mail.ru/principals/mail.ru/user.name/",
+        )
+        with self.assertRaisesRegex(ValueError, "полным email"):
+            mail_principal_url("https://calendar.mail.ru/", "user.name")
 
 
 if __name__ == "__main__":

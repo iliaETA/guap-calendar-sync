@@ -13,6 +13,7 @@ from dataclasses import dataclass
 from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any
+from urllib.parse import quote, urlsplit, urlunsplit
 from zoneinfo import ZoneInfo
 
 from caldav import get_davclient
@@ -25,6 +26,20 @@ from .calendar_export import event_dates
 STATE_VERSION = 1
 SOURCE_ID_PROPERTY = "X-GUAP-SOURCE-ID"
 MANAGED_FP_PROPERTY = "X-GUAP-MANAGED-FP"
+
+
+def mail_principal_url(base_url: str, username: str) -> str:
+    """Build Mail.ru's non-standard principal URL from a full mailbox."""
+    try:
+        local_part, domain = username.rsplit("@", 1)
+    except ValueError as error:
+        raise ValueError("MAIL_CALDAV_USERNAME должен быть полным email-адресом") from error
+    if not local_part or not domain:
+        raise ValueError("MAIL_CALDAV_USERNAME должен быть полным email-адресом")
+
+    parsed = urlsplit(base_url)
+    principal_path = f"/principals/{quote(domain.lower(), safe='')}/{quote(local_part, safe='')}/"
+    return urlunsplit((parsed.scheme, parsed.netloc, principal_path, "", ""))
 
 
 @dataclass(frozen=True)
@@ -349,7 +364,10 @@ def sync_to_mail_caldav(
         password=password,
         auth_type="basic",
     ) as client:
-        principal = client.principal()
+        # Mail.ru does not expose RFC 5397 current-user-principal discovery at
+        # the server root, so use its documented server with the provider's
+        # principal path convention directly.
+        principal = client.principal(url=mail_principal_url(url, username))
         calendars = principal.get_calendars()
         calendar_names = [str(item.get_display_name() or "") for item in calendars]
         matches = [item for item, name in zip(calendars, calendar_names) if name == calendar_name]
