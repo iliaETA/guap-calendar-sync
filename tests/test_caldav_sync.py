@@ -1,8 +1,11 @@
 import unittest
-from datetime import datetime
+from datetime import date, datetime
+from pathlib import Path
+from tempfile import TemporaryDirectory
+from unittest.mock import MagicMock, patch
 from zoneinfo import ZoneInfo
 
-from src.caldav_sync import DesiredEvent, RemoteEvent, build_plan
+from src.caldav_sync import DesiredEvent, RemoteEvent, build_plan, sync_to_mail_caldav
 
 
 class CalDAVPlanTests(unittest.TestCase):
@@ -66,6 +69,33 @@ class CalDAVPlanTests(unittest.TestCase):
         operations, state = build_plan({}, {old.source_id: remote}, {})
         self.assertEqual(operations, [])
         self.assertEqual(state["events"][old.source_id]["status"], "orphaned_manual")
+
+    @patch("src.caldav_sync.get_davclient")
+    def test_mail_connection_forces_basic_auth(self, get_davclient):
+        client = MagicMock()
+        get_davclient.return_value.__enter__.return_value = client
+        client.principal.return_value.get_calendars.return_value = []
+        with TemporaryDirectory() as directory:
+            with self.assertRaisesRegex(ValueError, "не найден"):
+                sync_to_mail_caldav(
+                    [],
+                    url="https://calendar.mail.ru/",
+                    username="calendar@example.com",
+                    password="app-password",
+                    calendar_name="ГУАП",
+                    semester_start=date(2026, 9, 1),
+                    semester_end=date(2027, 1, 31),
+                    week_one_monday=date(2026, 8, 31),
+                    tz_name="Europe/Moscow",
+                    source_url="https://guap.ru/rasp?gr=7147",
+                    state_file=Path(directory) / "state.json",
+                )
+        get_davclient.assert_called_once_with(
+            url="https://calendar.mail.ru/",
+            username="calendar@example.com",
+            password="app-password",
+            auth_type="basic",
+        )
 
 
 if __name__ == "__main__":

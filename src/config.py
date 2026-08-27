@@ -47,7 +47,7 @@ class Settings:
             timezone=os.getenv("TIMEZONE", "Europe/Moscow"),
             telegram_bot_token=os.getenv("TELEGRAM_BOT_TOKEN"),
             telegram_chat_id=os.getenv("TELEGRAM_CHAT_ID"),
-            caldav_url=os.getenv("MAIL_CALDAV_URL", "https://calendar.mail.ru"),
+            caldav_url=os.getenv("MAIL_CALDAV_URL", "https://calendar.mail.ru/"),
             caldav_username=os.getenv("MAIL_CALDAV_USERNAME"),
             caldav_app_password=os.getenv("MAIL_CALDAV_APP_PASSWORD"),
             caldav_calendar_name=os.getenv("MAIL_CALENDAR_NAME", "ГУАП"),

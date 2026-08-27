@@ -59,7 +59,7 @@ MAIL_CALDAV_APP_PASSWORD   пароль внешнего приложения
 Дополнительные параметры имеют безопасные значения по умолчанию:
 
 ```dotenv
-MAIL_CALDAV_URL=https://calendar.mail.ru
+MAIL_CALDAV_URL=https://calendar.mail.ru/
 MAIL_CALENDAR_NAME=ГУАП
 ```
 

@@ -340,7 +340,15 @@ def sync_to_mail_caldav(
         source_url,
     )
 
-    with get_davclient(url=url, username=username, password=password) as client:
+    # Mail.ru answers an unauthenticated PROPFIND with 400 instead of the
+    # standard 401 challenge. Force preemptive Basic Auth so credentials are
+    # attached to the very first discovery request.
+    with get_davclient(
+        url=url,
+        username=username,
+        password=password,
+        auth_type="basic",
+    ) as client:
         principal = client.principal()
         calendars = principal.get_calendars()
         calendar_names = [str(item.get_display_name() or "") for item in calendars]
