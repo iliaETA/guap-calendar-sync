@@ -26,10 +26,15 @@ class Settings:
     timezone: str
     telegram_bot_token: str | None
     telegram_chat_id: str | None
+    caldav_url: str
+    caldav_username: str | None
+    caldav_app_password: str | None
+    caldav_calendar_name: str
     schedule_file: Path
     previous_file: Path
     metadata_file: Path
     calendar_file: Path
+    caldav_state_file: Path
 
     @classmethod
     def from_env(cls) -> "Settings":
@@ -42,13 +47,20 @@ class Settings:
             timezone=os.getenv("TIMEZONE", "Europe/Moscow"),
             telegram_bot_token=os.getenv("TELEGRAM_BOT_TOKEN"),
             telegram_chat_id=os.getenv("TELEGRAM_CHAT_ID"),
+            caldav_url=os.getenv("MAIL_CALDAV_URL", "https://calendar.mail.ru"),
+            caldav_username=os.getenv("MAIL_CALDAV_USERNAME"),
+            caldav_app_password=os.getenv("MAIL_CALDAV_APP_PASSWORD"),
+            caldav_calendar_name=os.getenv("MAIL_CALENDAR_NAME", "ГУАП"),
             schedule_file=ROOT / "data" / "schedule.json",
             previous_file=ROOT / "data" / "schedule_previous.json",
             metadata_file=ROOT / "data" / "metadata.json",
             calendar_file=ROOT / "docs" / "calendar.ics",
+            caldav_state_file=ROOT / "data" / "caldav_state.json",
         )
         if settings.academic_week_one_monday.weekday() != 0:
             raise ValueError("ACADEMIC_WEEK_ONE_MONDAY должен быть понедельником")
         if settings.semester_start > settings.semester_end:
             raise ValueError("SEMESTER_START не может быть позже SEMESTER_END")
+        if bool(settings.caldav_username) != bool(settings.caldav_app_password):
+            raise ValueError("MAIL_CALDAV_USERNAME и MAIL_CALDAV_APP_PASSWORD задаются вместе")
         return settings

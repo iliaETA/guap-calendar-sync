@@ -31,12 +31,15 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          MAIL_CALDAV_USERNAME: ${{ secrets.MAIL_CALDAV_USERNAME }}
+          MAIL_CALDAV_APP_PASSWORD: ${{ secrets.MAIL_CALDAV_APP_PASSWORD }}
+          MAIL_CALENDAR_NAME: ${{ vars.MAIL_CALENDAR_NAME || 'ГУАП' }}
         run: python -m src.main
       - name: Save the new snapshot and calendar
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/schedule.json data/schedule_previous.json data/metadata.json docs/calendar.ics
+          git add data/*.json docs/calendar.ics
           git diff --cached --quiet && exit 0
           git commit -m "chore: sync GUAP schedule"
           git push

@@ -8,6 +8,7 @@ from datetime import date
 from pathlib import Path
 
 from .calendar_export import build_calendar
+from .caldav_sync import sync_to_mail_caldav
 from .config import Settings
 from .diff import diff_schedules, format_changes
 from .download_schedule import download_schedule
@@ -71,6 +72,29 @@ def run(settings: Settings) -> tuple[int, int]:
         print("Изменений нет")
 
     print(f"Календарь обновлён: {settings.calendar_file}")
+
+    if settings.caldav_username and settings.caldav_app_password:
+        result = sync_to_mail_caldav(
+            schedule,
+            url=settings.caldav_url,
+            username=settings.caldav_username,
+            password=settings.caldav_app_password,
+            calendar_name=settings.caldav_calendar_name,
+            semester_start=settings.semester_start,
+            semester_end=settings.semester_end,
+            week_one_monday=settings.academic_week_one_monday,
+            tz_name=settings.timezone,
+            source_url=settings.schedule_url,
+            state_file=settings.caldav_state_file,
+        )
+        print(
+            "Mail CalDAV: "
+            f"создано {result['created']}, обновлено {result['updated']}, "
+            f"удалено {result['deleted']}, ручных {result['manual']}, "
+            f"пропущено {result['skipped']}"
+        )
+    else:
+        print("Mail CalDAV не настроен; синхронизация пропущена")
     return len(added), len(removed)
 
 

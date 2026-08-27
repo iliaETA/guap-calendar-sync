@@ -40,7 +40,7 @@ def _fold(line: str) -> list[str]:
     return chunks or [""]
 
 
-def _event_dates(lesson: dict, start: date, end: date, anchor: date):
+def event_dates(lesson: dict, start: date, end: date, anchor: date):
     current = start
     target_weekday = DAYS[lesson["day"]]
     current += timedelta(days=(target_weekday - current.weekday()) % 7)
@@ -77,7 +77,7 @@ def build_calendar(
     for lesson in schedule:
         start_time = datetime.strptime(lesson["start"], "%H:%M").time()
         end_time = datetime.strptime(lesson["end"], "%H:%M").time()
-        for event_date in _event_dates(lesson, semester_start, semester_end, week_one_monday):
+        for event_date in event_dates(lesson, semester_start, semester_end, week_one_monday):
             starts = datetime.combine(event_date, start_time, tz).astimezone(timezone.utc)
             ends = datetime.combine(event_date, end_time, tz).astimezone(timezone.utc)
             raw_uid = "|".join(str(lesson.get(key) or "") for key in ("day", "pair", "week", "subject", "room", "teacher"))
