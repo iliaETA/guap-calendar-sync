@@ -48,6 +48,8 @@ python -m unittest discover -v
 
 Один раз откройте **Settings → Pages → Build and deployment → Source** и выберите **GitHub Actions**. Workflow сам загрузит содержимое `/docs` и развернёт его в Pages после каждой синхронизации.
 
+Если шаг `Configure GitHub Pages` возвращает `Get Pages site failed: Not Found`, значит Pages ещё не включён или в поле **Source** выбран другой способ публикации. Выберите **GitHub Actions**, сохраните настройку и повторно запустите workflow.
+
 Ссылка подписки будет такой:
 
 ```text
