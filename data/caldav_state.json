@@ -43,7 +43,7 @@
     },
     "2026-09-05|pair=2|week=upper": {
       "uid": "ff80a0c8978b573f46862e9d0ed22904@guap-calendar-sync",
-      "status": "managed",
+      "status": "manual_override",
       "managed_fingerprint": "6a7c724c45a76eee13de97e76ae30dc62f1bc0ed133d89456a9656f2521cbe41"
     },
     "2026-09-05|pair=4|week=every": {
