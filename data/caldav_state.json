@@ -78,12 +78,12 @@
     },
     "2026-09-09|pair=4|week=every": {
       "uid": "e0aaa243c2563f4a6ae837ff50b0c996@guap-calendar-sync",
-      "status": "managed",
+      "status": "deleted_by_user",
       "managed_fingerprint": "e8955248c7f87a1d2ad2c1b36d02222b1048bf81435eae61efde937c476773d3"
     },
     "2026-09-09|pair=5|week=every": {
       "uid": "e1b7bf1ece1602192c7f4f4024104d4d@guap-calendar-sync",
-      "status": "managed",
+      "status": "deleted_by_user",
       "managed_fingerprint": "d13462df0e8a750f8a36828923724b81b7e70c5fdd9cfcc13dbfcd1f654f165e"
     },
     "2026-09-10|pair=1|week=lower": {
