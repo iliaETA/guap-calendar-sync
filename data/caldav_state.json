@@ -103,7 +103,7 @@
     },
     "2026-09-10|pair=5|week=every": {
       "uid": "525ee8b3ebaf1c5c5096c79b267155c1@guap-calendar-sync",
-      "status": "managed",
+      "status": "deleted_by_user",
       "managed_fingerprint": "e5a30f864ac5225ff2f227c202e80ec261091e2ad742f49c19bf26afa239da83"
     },
     "2026-09-12|pair=3|week=lower": {
