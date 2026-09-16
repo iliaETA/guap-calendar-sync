@@ -158,17 +158,17 @@
     },
     "2026-09-17|pair=3|week=upper": {
       "uid": "8f37454da6c9aaa431fe6d2358b73c16@guap-calendar-sync",
-      "status": "managed",
+      "status": "deleted_by_user",
       "managed_fingerprint": "53f68bff0eb4c2eebba0b050c11e35fed087122618f5d8ced02ff8df3fbcbc6c"
     },
     "2026-09-17|pair=4|week=every": {
       "uid": "ce8d41611a515aaf197303d82ddd2af0@guap-calendar-sync",
-      "status": "managed",
+      "status": "deleted_by_user",
       "managed_fingerprint": "88547ff372464afbbe4b77b02abc295106eaec53289aa2780fe52a541e67f244"
     },
     "2026-09-17|pair=5|week=every": {
       "uid": "362419dbf298b41d5446f19b253b856e@guap-calendar-sync",
-      "status": "managed",
+      "status": "deleted_by_user",
       "managed_fingerprint": "60c346f5d9df8c506f5391a9113c1f1af8d8e57833e3e02a9c19fec6cca17faf"
     },
     "2026-09-19|pair=2|week=upper": {
