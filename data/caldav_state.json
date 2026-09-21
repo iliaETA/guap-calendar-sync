@@ -29,7 +29,7 @@
     "2026-09-03|pair=3|week=upper": {
       "uid": "9ee1fca2bf0a668931df965f937e0a86@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "2ab72d223f70a1ff7c6ab53a53d5204da6c1d7361b61bb9137d21beebc4a23e4"
+      "managed_fingerprint": "655bbb956e63a3d3ec6af8ac58f10d1b132f3c16d379a3c9d80007475fa65b6b"
     },
     "2026-09-03|pair=4|week=every": {
       "uid": "65a50921ffd910808acda9da23e7d292@guap-calendar-sync",
@@ -114,7 +114,7 @@
     "2026-09-14|pair=1|week=upper": {
       "uid": "9ac4561220be6dc61ede9c9cceec3072@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "a53215d0cacf4e09d242094d344bb0db7ca28d4f3560c906f7f1b36308253fd3"
+      "managed_fingerprint": "723f0f9c00f8e6507e1ca3db735ff22b8acea99b7c5ef9ec873f5e02596179d6"
     },
     "2026-09-14|pair=2|week=every": {
       "uid": "c979cf6f7f7899a33f431c78053be800@guap-calendar-sync",
@@ -124,12 +124,12 @@
     "2026-09-14|pair=3|week=upper": {
       "uid": "f53fa25347d8f8a76ecdb169e904626f@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "7a3c69b655eb8efd329ebe2c5a72784da20091c818c32aa6d91c09355790dbaa"
+      "managed_fingerprint": "5bf8f8f659ecb9f752394558d8bef0c94ff8794d2cedb29b9d474e514f3603a1"
     },
     "2026-09-14|pair=4|week=upper": {
       "uid": "569faca54f3e004f6240472f113546e3@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "042a0d964e2d8055069e1d7a0a60f68a9153ba6af77de7b306d3d019924491d3"
+      "managed_fingerprint": "8bb966cf210ad562a6dc9ddf484c789be2f7090781a1549bfd6dbf183fb5c37b"
     },
     "2026-09-15|pair=3|week=every": {
       "uid": "f8901d2699516502a18f2fde9a508c12@guap-calendar-sync",
@@ -174,7 +174,7 @@
     "2026-09-19|pair=2|week=upper": {
       "uid": "e5ac0f8f62fb590394a7f6454ab09bd5@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "166bba06c445f27fc0125dbc2c4a34f21d2f54e3ce595868165972bc2b4d23cc"
+      "managed_fingerprint": "88eabd648f3df8f9508e17e8e85244062a8d360e69949ef7cb72a3f02fabcb38"
     },
     "2026-09-19|pair=4|week=every": {
       "uid": "7a554ca06d4962240a27a4844c7092cc@guap-calendar-sync",
@@ -194,7 +194,7 @@
     "2026-09-22|pair=4|week=lower": {
       "uid": "e43c0ac8a7f09c991f86cb9cf419a82d@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "d0503121024ecf6e41ef28c3678e20eb60b9090f58e8f8fac497a259948cb27d"
+      "managed_fingerprint": "7501e0e088a03d2331e1ca8a8fe0154be4c3b64ebc81cd29c57bbba494bd109a"
     },
     "2026-09-22|pair=5|week=every": {
       "uid": "ec1a8f8c74fbfad0908abe3fbb72bbc4@guap-calendar-sync",
@@ -244,7 +244,7 @@
     "2026-09-28|pair=1|week=upper": {
       "uid": "be16915805937f69ca92000cb7c21498@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "2d44a27bf0d5248ae0a4749edaf78737d40bc981b89c95292d46e84bdef7c4b3"
+      "managed_fingerprint": "52635b4e688fcef6a6cc1aba6431b1c0758fcaea60c4e6d0072ec9b3043491ac"
     },
     "2026-09-28|pair=2|week=every": {
       "uid": "8c696209dbcc6566f444872c6d17e694@guap-calendar-sync",
@@ -254,12 +254,12 @@
     "2026-09-28|pair=3|week=upper": {
       "uid": "7630629801876c1f1a404a019fc4a5b9@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "2a65ae7470c1604a4e4153e96fa5a4fc8f3f7b05b62190b0cf8b3ea077c0e8e5"
+      "managed_fingerprint": "093706efe1f47b04d26026deda44e0d534e8b3ef5795cbff4ac192e10c5b81a6"
     },
     "2026-09-28|pair=4|week=upper": {
       "uid": "39c829cb73497c52fd989c41864b7dea@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "b05eb5bc63ffa62292a0f7818d02059e049a781b4521117a9a1972fc19c024ce"
+      "managed_fingerprint": "44f16f102335f97d66ca8409485649661385cda8e7d1a6ad0bac566ec91b65d9"
     },
     "2026-09-29|pair=3|week=every": {
       "uid": "fab5fcfbf2c43ef8d315667c75da758c@guap-calendar-sync",
@@ -289,7 +289,7 @@
     "2026-10-01|pair=3|week=upper": {
       "uid": "705dddcfd1ab3faa23c47bb8cc7cf8d9@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "e12122f530136e11ed7c82e8444f6cf03ce84558e7c1ec0ebf1d962c81c0098d"
+      "managed_fingerprint": "454720798b6e2124f987a86e30ff409502770ecd9523affeb920a0605d8c3137"
     },
     "2026-10-01|pair=4|week=every": {
       "uid": "d43f83c54a45b2957b51c6ff6bfb8320@guap-calendar-sync",
@@ -304,7 +304,7 @@
     "2026-10-03|pair=2|week=upper": {
       "uid": "3ffd8a45c15684643e82641cc8cf8629@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "eb4b564e0223e96cddd7a8463788262bc83a6c0e40a1aa3fca6fe857df5325af"
+      "managed_fingerprint": "f9781bd177c423a6b7dc8f69ec906c173298a503ca23598a047da617c1876960"
     },
     "2026-10-03|pair=4|week=every": {
       "uid": "6181d371a74b2caf26f1b4e98078df12@guap-calendar-sync",
@@ -324,7 +324,7 @@
     "2026-10-06|pair=4|week=lower": {
       "uid": "ecac1173a152f700e71ee231ce906dfd@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "ce94b25e8ed12d2e1a51f1e9bfa631530add37902899052cf1fb90dc3a2f96b6"
+      "managed_fingerprint": "6513c412c4c8dd0a034cb0fece12e98784695fc8d563b4a40926432163f10828"
     },
     "2026-10-06|pair=5|week=every": {
       "uid": "5c691008dd87ca5784af4123e0383a2b@guap-calendar-sync",
@@ -374,7 +374,7 @@
     "2026-10-12|pair=1|week=upper": {
       "uid": "3f5658ea6e8c70bd97f1517474e00963@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "b2a4d854e245ca2747c5c4816b24842492ab1e7033b9a90e850d339d5e40cb12"
+      "managed_fingerprint": "0d329b8262419b3bed06b3acde7d76d1f86e47fd8401dea72fb40bda2e63963f"
     },
     "2026-10-12|pair=2|week=every": {
       "uid": "9869a8b0d2a3497488ba2ee85f303850@guap-calendar-sync",
@@ -384,12 +384,12 @@
     "2026-10-12|pair=3|week=upper": {
       "uid": "83650993b7f44c26e17c78665415aa74@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "804b6f9b5f149d22f6771b366a16d7e76fa69b4cac78a3d75e0cc40445ce1aef"
+      "managed_fingerprint": "78b275f9d4d0d2892476bcced7f46acbcc1dbf45eb696ac4215b51cf574b58f3"
     },
     "2026-10-12|pair=4|week=upper": {
       "uid": "b580d32a66ad22b75320988a35574bab@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "49467c275866ec9f741732438fe41d72f5e6f413af2016f430704b6826a3137c"
+      "managed_fingerprint": "934580bc5e5c487211e965afb923d92a5b7c3c2df781db94bc62c87c3ed85829"
     },
     "2026-10-13|pair=3|week=every": {
       "uid": "31364c8cef1a2e12663fa1503863fa0f@guap-calendar-sync",
@@ -419,7 +419,7 @@
     "2026-10-15|pair=3|week=upper": {
       "uid": "5437f04e5fd620b2929306defdc49934@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "6257affa1ccbe149be1c25b18e72c89e246a1e187dce1b64a179d4081098676a"
+      "managed_fingerprint": "d9854ff8f1708b00ec186a179775ecba04d8a219010f1416578dc9e73b96d3c6"
     },
     "2026-10-15|pair=4|week=every": {
       "uid": "3597ec2ed385629fe4c6b901d099cad5@guap-calendar-sync",
@@ -434,7 +434,7 @@
     "2026-10-17|pair=2|week=upper": {
       "uid": "229b5cdbe35d34a6c96007918d81b651@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "07489195921aba6485341fbbb2c0fabe885e5886cc1d29f5686234885aa4130e"
+      "managed_fingerprint": "98112739c7df05c84d78ba91432b54fa09040723a6ae758a5b8ed4e269c5aa17"
     },
     "2026-10-17|pair=4|week=every": {
       "uid": "af8c2f5aaff1a8f0eb7c636b14ad00cd@guap-calendar-sync",
@@ -454,7 +454,7 @@
     "2026-10-20|pair=4|week=lower": {
       "uid": "717e005538e5acc13157bb3570416e35@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "f5b1c4953135036fb9ac18bbb585ca0d44c840a98c44148ac44324960702ab50"
+      "managed_fingerprint": "e2179b2cd8c92a5f61ef0b9fcb27ead9157d5b47210f9492ed10a1d2530409a2"
     },
     "2026-10-20|pair=5|week=every": {
       "uid": "675f138ca3057cc794e33b00307ce77d@guap-calendar-sync",
@@ -504,7 +504,7 @@
     "2026-10-26|pair=1|week=upper": {
       "uid": "9aa0ee7719d77b9f6d8c6d06f7fd92c7@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "be3379f44feca4795a335ff13b78ba6f86e70823311ca0229c0b5b4f2c85891d"
+      "managed_fingerprint": "1b7f03ec00b1c5290ecf4007e2f5136ea58982e4861fbede937bd1e8530b5d3c"
     },
     "2026-10-26|pair=2|week=every": {
       "uid": "875f4eb6688a8924cd1081250c29e172@guap-calendar-sync",
@@ -514,12 +514,12 @@
     "2026-10-26|pair=3|week=upper": {
       "uid": "2fdda4b91ee2af53c5e8bac33eacbadc@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "1821cca00ce004be48e25f417ac101c669f2dd5b61c2ad717df82533ec2d2b49"
+      "managed_fingerprint": "74e8509026826cbc03c00166242f3125e4db826b07c310ea37ace1c68eca7bfb"
     },
     "2026-10-26|pair=4|week=upper": {
       "uid": "fa8b86e7b30e3a6489f74b6532c17a1f@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "129a3c86b9bd333cf7a18168ba936ef82429ad730fcf08a750472d20de67cdbd"
+      "managed_fingerprint": "214305a119fde091deaa2c0acbca2f9262a973cb82f28c9694670e06075b9ea8"
     },
     "2026-10-27|pair=3|week=every": {
       "uid": "d6bcd5debf03300f6109df791237d106@guap-calendar-sync",
@@ -549,7 +549,7 @@
     "2026-10-29|pair=3|week=upper": {
       "uid": "0c5f5835731929e2ca876e0445424a9e@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "edeaa12db57bb5e0ac69cbf28f4a78ceda3cfce6e673e46249078347e1ab6d78"
+      "managed_fingerprint": "fda8f4173b11563eb758d14d2c384e434cb29786591e446e78814eb70337649b"
     },
     "2026-10-29|pair=4|week=every": {
       "uid": "dceecdbd214ece3571e3d774328fa6b6@guap-calendar-sync",
@@ -564,7 +564,7 @@
     "2026-10-31|pair=2|week=upper": {
       "uid": "a4c09581ca4183a41d3c5bde6d804f0d@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "f7ad238cb92bd4630686da173589fc4890450899d95b9a9eb47ef4144a5fa932"
+      "managed_fingerprint": "7ac5c0afbd421b870f45e4a15f7bd90a665621350d9050565e07d4de290d2a48"
     },
     "2026-10-31|pair=4|week=every": {
       "uid": "f6d62aec73afcfef2147607c3905aa52@guap-calendar-sync",
@@ -584,7 +584,7 @@
     "2026-11-03|pair=4|week=lower": {
       "uid": "4c5f086b8705f3fdcb155a2ede9da9f5@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "ce799685fc515030a78439784d12a577472e2c8c9577c870bcf49ce33f5bec7e"
+      "managed_fingerprint": "5fe4ebc63c12b74b3d5fb4db9f16aab6d6130cb666159d7760cf3982a8b38bb1"
     },
     "2026-11-03|pair=5|week=every": {
       "uid": "5213826a845e6ec5f8af378376fca638@guap-calendar-sync",
@@ -634,7 +634,7 @@
     "2026-11-09|pair=1|week=upper": {
       "uid": "c844b053bd36e9736e5ac9c0e2aded6f@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "6769687bcdb1117ec37ffa535782e55f0c3502c910d8697ad1bdeecdbf28eb3f"
+      "managed_fingerprint": "b32e0f853e2dee522df1371b9b29f55358b098689103333036aadfe45e2e76e1"
     },
     "2026-11-09|pair=2|week=every": {
       "uid": "2e963ffe7b66a416a300027c7cc2a2fe@guap-calendar-sync",
@@ -644,12 +644,12 @@
     "2026-11-09|pair=3|week=upper": {
       "uid": "47a13b9a613a5eef01f8e0a3d6f43a26@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "f691e59dade8e1b0ec93d9536372096bd31b2a90a2415f2e490824ff84136ec0"
+      "managed_fingerprint": "7b5c950f06918e5a129e99cc46f5f30bdd03770664e43542a6afd26dffb12208"
     },
     "2026-11-09|pair=4|week=upper": {
       "uid": "e312a9fc0f979b0c9cbb32bac11f5e7b@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "6a0d65c0e6f57cdadb7b55aa0496e47a69c47bf07ef988bd129dc12294cf69ef"
+      "managed_fingerprint": "5e41a8ed78e3f5a580c78e1508872613100d1da90e5bc930376d8bd172af7752"
     },
     "2026-11-10|pair=3|week=every": {
       "uid": "87c0420e35f52c7a445dd5b77126f831@guap-calendar-sync",
@@ -679,7 +679,7 @@
     "2026-11-12|pair=3|week=upper": {
       "uid": "aeac066b86218d6c53dceaa3e6aca327@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "97da32025a0b60ee757249bc1d73ef60333887629efc0552e20ff0cacd744e2a"
+      "managed_fingerprint": "61b2ec3c0d9441b02559499c00e97174aafbecf73cf81b001d5ba82c18b0940a"
     },
     "2026-11-12|pair=4|week=every": {
       "uid": "d0e4ab502db06d452d48b924979ebd9b@guap-calendar-sync",
@@ -694,7 +694,7 @@
     "2026-11-14|pair=2|week=upper": {
       "uid": "98a3c75333b9490b1abcb03b201f7758@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "36056bb8358c78caa6d559a2d5ff0970215e809ba547cda428430e39ae52473d"
+      "managed_fingerprint": "9c3a113d4934f3a5f60748eb21d1f811b0dae2a917aada81f55b9fa327671443"
     },
     "2026-11-14|pair=4|week=every": {
       "uid": "68014c28d7e6c3d3508cb4d7143731ac@guap-calendar-sync",
@@ -714,7 +714,7 @@
     "2026-11-17|pair=4|week=lower": {
       "uid": "9303b7581e87c9abe64ff9b83dd7a31e@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "01492f881039b2747156cccb6f83e0c5e6807883bea951a914db93a232165bee"
+      "managed_fingerprint": "a80681e1f2d5539709eaabcf3eb67291c6378e080b758906bb050315bcb7a27a"
     },
     "2026-11-17|pair=5|week=every": {
       "uid": "ed8b7829a989033b0f5c6ef139f63769@guap-calendar-sync",
@@ -764,7 +764,7 @@
     "2026-11-23|pair=1|week=upper": {
       "uid": "dd244410538e70f504e451da735bc67b@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "b522db3e16012e266bcce0dceac9d661c252eea9bd56ffba0e75bdfc5162769b"
+      "managed_fingerprint": "c036057ef573908951df231c3369e44e08dc55ed81c786e90ce1421db7bbfb50"
     },
     "2026-11-23|pair=2|week=every": {
       "uid": "ed82a19b0b37dcbf1b7f5ae53d97052b@guap-calendar-sync",
@@ -774,12 +774,12 @@
     "2026-11-23|pair=3|week=upper": {
       "uid": "ab780525f9bb6433be12cf9e6cfd2e2b@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "8a39cf1dd2ff754ef0db9e4a59aa463c7a66658e3dd53aa271f483dfe7d95f1f"
+      "managed_fingerprint": "c246e8636cc3eb975439b4b77fee796af4e8dbe8632e85b1c9a3a34d481d1b41"
     },
     "2026-11-23|pair=4|week=upper": {
       "uid": "86a6c8aabd2312228d08e027b5128273@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "2f4a4f6ec88ad59e7b6b69e3dd1e9af664f1de07f54908c50029f5553d9604a3"
+      "managed_fingerprint": "de38a07fe64248a79094895271325cb66e5ad59ad823a1acd5223c5bc2c5b709"
     },
     "2026-11-24|pair=3|week=every": {
       "uid": "b77e3f127bf37aafdc259a7b3db2352b@guap-calendar-sync",
@@ -809,7 +809,7 @@
     "2026-11-26|pair=3|week=upper": {
       "uid": "0134d68b11c309a3c1e8671a391afe46@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "27bf687fc9f7ae46af30ea02ad9a90b7230f69136e798a835ab7d0670f688810"
+      "managed_fingerprint": "713b71e98a9b1a24bb808a62d4aae8fa4e2f16744c3f48fbc3ac355e777e9bb8"
     },
     "2026-11-26|pair=4|week=every": {
       "uid": "e46ef94517682f137d0624d1b4630466@guap-calendar-sync",
@@ -824,7 +824,7 @@
     "2026-11-28|pair=2|week=upper": {
       "uid": "7cf3278afc9c23777fdea711523f4ef2@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "72112ba8b9ab3f0e5f271d135506857891b8f771291d37f66384b7de50d4d59f"
+      "managed_fingerprint": "64ec32823a3ce2dd8b3894b47ce0d0f977103b8fb2aced21adf2898d8897e0ab"
     },
     "2026-11-28|pair=4|week=every": {
       "uid": "76792eced8e307fa964218a1c1ba24c7@guap-calendar-sync",
@@ -844,7 +844,7 @@
     "2026-12-01|pair=4|week=lower": {
       "uid": "e16e0585b21efc2bc09724ca1fd4aa1c@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "15652d74d41fe46eb9c8359f3839c6cd66589ba4fc2defe4920986ed7c8e1ad3"
+      "managed_fingerprint": "b9844b77d789bc008b7dc4c3c0f2172565549a3de9529b2c6e194326613d9f46"
     },
     "2026-12-01|pair=5|week=every": {
       "uid": "6cb8badc715b251d83111e42b82aee01@guap-calendar-sync",
@@ -894,7 +894,7 @@
     "2026-12-07|pair=1|week=upper": {
       "uid": "a72e0ffa835e2fcf8ff6ec0bfcd9fa9e@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "39ee80b4e0dd198d7efdcd3af85d6c722f1cd944352e9f7d7d967cde5cf18bdd"
+      "managed_fingerprint": "1f2e3221b1b08b6530d48a5b9e77a309b6830dd6acced3a709e0737eac041c82"
     },
     "2026-12-07|pair=2|week=every": {
       "uid": "e02864b5d7609d80a9c2c37cf8f7ceda@guap-calendar-sync",
@@ -904,12 +904,12 @@
     "2026-12-07|pair=3|week=upper": {
       "uid": "54068fb3d19bb4a16180d768aab8f48a@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "6fc5688d2bc00a16ed98d59add275a383e7ad69dfa57e671cb693ca36fa577a9"
+      "managed_fingerprint": "459e9fe48ca5ae883ba7557eb6c65bd0e9cba97c7057350ed0b6f46a853df92c"
     },
     "2026-12-07|pair=4|week=upper": {
       "uid": "da14faca44c3c90fc2b1f4d38ce04636@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "d303fa7ac5c579869ccf3ad771e4ac6840a13cc4ca91750e32e09baea1bf4774"
+      "managed_fingerprint": "8e6acb431aa6d32a41d22c713fedcaa5da62a1264ed28934b0c09344dca62d6a"
     },
     "2026-12-08|pair=3|week=every": {
       "uid": "31ab169e7704d421def281d0935d579b@guap-calendar-sync",
@@ -939,7 +939,7 @@
     "2026-12-10|pair=3|week=upper": {
       "uid": "2d064a34b82572f651fdfffea82a5109@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "a0d9a2581ef1b554bb28afc9f71adf6c2a4c84256095cd9f26cb9ffc332c1c24"
+      "managed_fingerprint": "32c30a0da3ebf8aa85476374ac49853b17aefe44a596ae2ffd5cb9a4c898f42c"
     },
     "2026-12-10|pair=4|week=every": {
       "uid": "a4e6eee723138cc4fe3a3076883755fa@guap-calendar-sync",
@@ -954,7 +954,7 @@
     "2026-12-12|pair=2|week=upper": {
       "uid": "3404ca2fa51f7766edbc59f84a542080@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "d77f48bf4ede531fee6edab6dd5a60250a226a3f051df75b3d9e09ac041c2255"
+      "managed_fingerprint": "6a13c30e1f883e463561aac99da9c049e7466ea39f22fada19cb98e529f0fe10"
     },
     "2026-12-12|pair=4|week=every": {
       "uid": "5015049db6da3e23406fa649d73c89ab@guap-calendar-sync",
@@ -974,7 +974,7 @@
     "2026-12-15|pair=4|week=lower": {
       "uid": "dfcaf191f6ecd5d8f18cc4bc6c7a564e@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "ec90e7ad7a5d3416fef93bb420638b20651077005a4295e8e0e802e31a7931c1"
+      "managed_fingerprint": "fadf7056267b75e3b0355c70be3411addfc137557d1dbf8327190bda956d0214"
     },
     "2026-12-15|pair=5|week=every": {
       "uid": "4fafab3d179235ff55f873459df45912@guap-calendar-sync",
@@ -1024,7 +1024,7 @@
     "2026-12-21|pair=1|week=upper": {
       "uid": "f9cb0a5f151a38ee755f0beadd54b2e0@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "e046d2a5d34f9b4a592d5b06f28e2e55d465f1dbeda1685a3894b059a4bfb429"
+      "managed_fingerprint": "e0c88b1b3178ef8ce07c258913f9989b24b509e4d206e681ebccad5f775434ed"
     },
     "2026-12-21|pair=2|week=every": {
       "uid": "2a48ce551b0caef5b49e5887e9d965ed@guap-calendar-sync",
@@ -1034,12 +1034,12 @@
     "2026-12-21|pair=3|week=upper": {
       "uid": "3af12e496cec1d19bca2ee1db8695d7f@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "705333cfee1b10236183d7f0c4917bc2baa01cdaebc948f7466cde6dbb3dfec9"
+      "managed_fingerprint": "ba9557955499ea96ebcd5fcd41ce52eae6043fd7dc3dbf7c954f2e7aba1014e8"
     },
     "2026-12-21|pair=4|week=upper": {
       "uid": "48ae4656b088f5d39ea54a986f88f82a@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "e014c738d2a128bbb15d85c6571b5f5384742638464a73e650bbd73b0c4f9333"
+      "managed_fingerprint": "f88306e193eca456deea1a296806775045fe23020e38b3ef8f1a6e817e582f66"
     },
     "2026-12-22|pair=3|week=every": {
       "uid": "30c8a7ff72f09808114218a1942fd627@guap-calendar-sync",
@@ -1069,7 +1069,7 @@
     "2026-12-24|pair=3|week=upper": {
       "uid": "56fd662d1c5cdcbcddaa461bb23c97a6@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "f04d6567d3b8324dd25a3cd5b94a4602cf008f8e8b459ab71c688bec49e5d0e0"
+      "managed_fingerprint": "b1097b0efe963de50c8b94fc47d79c7981d69b76ccaa5f565d21227d39e8443d"
     },
     "2026-12-24|pair=4|week=every": {
       "uid": "a3d67a00609c1edc3a06ecc4143c0f60@guap-calendar-sync",
@@ -1084,7 +1084,7 @@
     "2026-12-26|pair=2|week=upper": {
       "uid": "c2aa5d6a557c7e2bf0a538dff4a10524@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "1ce66d6666a05f8eb343f9d42fb2a11effed6fe1df20522963a57b9aff212c4a"
+      "managed_fingerprint": "06c92ac1878d03d81cd504904fca95e1729095972cb03352ccf7d2b1b14abf62"
     },
     "2026-12-26|pair=4|week=every": {
       "uid": "ac518dfc85ee53e0406be4eccf68b651@guap-calendar-sync",
@@ -1104,7 +1104,7 @@
     "2026-12-29|pair=4|week=lower": {
       "uid": "21d374b9a65fc7fdea79e82f50c1ecbc@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "06424c0f434551ad0916db70c91d5d39da972a19a68d1abc7320f12cdb4e6104"
+      "managed_fingerprint": "5440a90fa0afd189fcfea00e499dc9872ed08ae6989eb3f0eb70c06b185a8c20"
     },
     "2026-12-29|pair=5|week=every": {
       "uid": "bbb675a39591c4e3c80f9f8fd90803ef@guap-calendar-sync",
@@ -1154,7 +1154,7 @@
     "2027-01-04|pair=1|week=upper": {
       "uid": "2321623c28c9e4197afb8c51064b39aa@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "c58d9b85a3249decab29a90a793d75f0752a2cfbbcefb0d8abe0f3013d688fc7"
+      "managed_fingerprint": "fdf1afc962a01a5ce5f5e510db9927dec0565b0473018ebff111d158495e1b08"
     },
     "2027-01-04|pair=2|week=every": {
       "uid": "af5aaac607549760ad2f1fea9d265db7@guap-calendar-sync",
@@ -1164,12 +1164,12 @@
     "2027-01-04|pair=3|week=upper": {
       "uid": "0c8d0d6a7c43d37d4047b40a2bd61ead@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "3bda06d7db6d4377dcb814cec061bebc2b741e082093d331d8625e228cf82cbd"
+      "managed_fingerprint": "e199a3c27b1d4e0d3054fdf0f25c354043d7581268e5c86ed7fe26013a0d5551"
     },
     "2027-01-04|pair=4|week=upper": {
       "uid": "5e76337d902ec6b702406548d2961874@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "1f68bad4863add89045ba7b04a5258dd9d35f8756604332e53dddbafce4e85bf"
+      "managed_fingerprint": "823976ab449570636983dfad9a6f5da6ae8f1043b91857c7a6fbc3bbf8d3c8fe"
     },
     "2027-01-05|pair=3|week=every": {
       "uid": "6bf6b73b91d38c74ebdf3f9fc7918571@guap-calendar-sync",
@@ -1199,7 +1199,7 @@
     "2027-01-07|pair=3|week=upper": {
       "uid": "999b8128a6512b5801b378b0cc54cfaf@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "a7e5abb1b95a7f60cd1b406b8e6ecce46f29b8313d15a25d6ea55d069d3cdbb1"
+      "managed_fingerprint": "2a846a67dcd5f3a4c499a7c882af923e9b2fd4345f2e433f51398951337265be"
     },
     "2027-01-07|pair=4|week=every": {
       "uid": "378c5dcc6650dd6e24f661df4581ce8b@guap-calendar-sync",
@@ -1214,7 +1214,7 @@
     "2027-01-09|pair=2|week=upper": {
       "uid": "0050341a61042a980feb93db04cd17f7@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "1250489b93eeca9fe06145ae20523a97e4a736b8d4ddb23c1dc5c93c8cfaf26a"
+      "managed_fingerprint": "f694b2845788315015c8c235b40f45cb2ca8f96b346838b9315dcfd74d7096db"
     },
     "2027-01-09|pair=4|week=every": {
       "uid": "0cdf939b64cb8542bbfc25d3a96accf9@guap-calendar-sync",
@@ -1234,7 +1234,7 @@
     "2027-01-12|pair=4|week=lower": {
       "uid": "71464b703d7d8fb2675b6df795bdeb0f@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "d586d11af53e2abbae85ef13e7f88e4bd8e3618d17b32b39120bb73ff8bbec49"
+      "managed_fingerprint": "48524acd05457aa3eee60a92c42a88c49e67294ee7c58f1a523e69529ce9f6ce"
     },
     "2027-01-12|pair=5|week=every": {
       "uid": "af6c3732a95554912eb21810cb31d4fc@guap-calendar-sync",
@@ -1284,7 +1284,7 @@
     "2027-01-18|pair=1|week=upper": {
       "uid": "d065bc0750f293cfe223129449527053@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "4676b103d441782f55e25fb606e413b5c6616afeb9e887e8e74327890efe8f5b"
+      "managed_fingerprint": "40753d25005255542f157caedda035b0cc6436c36d562550b4937d6a72d95e0e"
     },
     "2027-01-18|pair=2|week=every": {
       "uid": "672de2361aa9619218c36a8371070207@guap-calendar-sync",
@@ -1294,12 +1294,12 @@
     "2027-01-18|pair=3|week=upper": {
       "uid": "36ef9de5f95dbe9ea179737a8a6e7936@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "c246866326c44ddf54591a23467a9bce6e197c54d2192db32b6e4c0c0a990f53"
+      "managed_fingerprint": "ddc1534eb290806bf5c8f87e0e38fadbf15541cf09bbe5b9ce60d2455d8025b0"
     },
     "2027-01-18|pair=4|week=upper": {
       "uid": "0c1a836ad9df3986247b9d1e4ca62e2e@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "3efc74be7c37339973f06c7cd66ab7d2f1770095fa461282cd256fb9a08b5fbb"
+      "managed_fingerprint": "2c41af3454c0c1dc6dc4e9253589a7b856921565bdcfe409012760908ead1aac"
     },
     "2027-01-19|pair=3|week=every": {
       "uid": "5573274a23dce7496ee3da61f450134a@guap-calendar-sync",
@@ -1329,7 +1329,7 @@
     "2027-01-21|pair=3|week=upper": {
       "uid": "d18b0b69641d92ebba22f6bb474d3cb5@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "273bcb110b617d82d4daf1553111b8450175990f624e4041735064e9e966ba53"
+      "managed_fingerprint": "b4b2132ec40a7e98c29826212fb0105b8bec2293841bda279a63144c11621759"
     },
     "2027-01-21|pair=4|week=every": {
       "uid": "01ac44f3b52f6836d26ef4d08b62e49d@guap-calendar-sync",
@@ -1344,7 +1344,7 @@
     "2027-01-23|pair=2|week=upper": {
       "uid": "75caac1f37bc9bbd67c7ebe5ece0655c@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "b88a22d7ad6c1f47b908f805d8157f94cade8eda200d43fec4afe77cb32c714c"
+      "managed_fingerprint": "70600b7473174cfa58b569aaca7b712bd6441e5aee0adbf93a3814754ed798e4"
     },
     "2027-01-23|pair=4|week=every": {
       "uid": "f9a1653b0986fe59f9219a6eaadab5b5@guap-calendar-sync",
@@ -1364,7 +1364,7 @@
     "2027-01-26|pair=4|week=lower": {
       "uid": "8802154dc068a78cc9edff35f825e6ec@guap-calendar-sync",
       "status": "managed",
-      "managed_fingerprint": "848ef231a11f919cbd8e2f618001d5fdb7dd75fc82286c368fd67c38f595c5de"
+      "managed_fingerprint": "dff6d34fa1d41ac6939b57bad634704c526d9c86586c3c485538b485c3719603"
     },
     "2027-01-26|pair=5|week=every": {
       "uid": "33ae22d483761ccbe5dcfbd4374e96e9@guap-calendar-sync",
