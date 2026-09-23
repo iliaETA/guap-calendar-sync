@@ -218,7 +218,7 @@
     },
     "2026-09-24|pair=2|week=lower": {
       "uid": "c3e362f4d2a60f059b20140eb603b591@guap-calendar-sync",
-      "status": "managed",
+      "status": "deleted_by_user",
       "managed_fingerprint": "e55ddf82835c269d148811142575c0e2bd1000c1414cf74d2188fec4b947ea5a"
     },
     "2026-09-24|pair=4|week=every": {
@@ -228,7 +228,7 @@
     },
     "2026-09-24|pair=5|week=every": {
       "uid": "397626ea4c205b91bb40ce86150211ca@guap-calendar-sync",
-      "status": "managed",
+      "status": "deleted_by_user",
       "managed_fingerprint": "05e77b1276cd9b52c289f7e228fe9e5946190fe655bcac9b06cee7f9a5c7fae9"
     },
     "2026-09-26|pair=3|week=lower": {
