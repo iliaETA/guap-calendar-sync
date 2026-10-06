@@ -333,12 +333,12 @@
     },
     "2026-10-07|pair=4|week=every": {
       "uid": "47e69bbb297001e6d79ec856639da97d@guap-calendar-sync",
-      "status": "managed",
+      "status": "deleted_by_user",
       "managed_fingerprint": "6d8606ebb29977e576120598ef20c95adb230881b8b58327f26cab8397227f41"
     },
     "2026-10-07|pair=5|week=every": {
       "uid": "4b5374c4c9ffa77ebe828ab2cda68e64@guap-calendar-sync",
-      "status": "managed",
+      "status": "deleted_by_user",
       "managed_fingerprint": "bf5fa3c6059b22286e81c1ca7a98a90ca414051a4fe16824dbdb1e987b27cdd0"
     },
     "2026-10-08|pair=1|week=lower": {
