@@ -383,7 +383,7 @@
     },
     "2026-10-12|pair=3|week=upper": {
       "uid": "83650993b7f44c26e17c78665415aa74@guap-calendar-sync",
-      "status": "managed",
+      "status": "deleted_by_user",
       "managed_fingerprint": "601f0ae1cc3387988769fd70f1ad2f62601e5b947f0ad25b254c5d4df7b4d26e"
     },
     "2026-10-12|pair=4|week=upper": {
@@ -393,17 +393,17 @@
     },
     "2026-10-13|pair=3|week=every": {
       "uid": "31364c8cef1a2e12663fa1503863fa0f@guap-calendar-sync",
-      "status": "managed",
+      "status": "deleted_by_user",
       "managed_fingerprint": "ade55c7843aaa3ee555a6cfd466ecfaed752755fa6ab73c3b7125e79948d6ea8"
     },
     "2026-10-13|pair=4|week=upper": {
       "uid": "2b6fc3f32805f95c4c833110d8e25900@guap-calendar-sync",
-      "status": "managed",
+      "status": "deleted_by_user",
       "managed_fingerprint": "8e4faf767821b4d674520d9891558a92110adae7e374dbf189981bf788b2e106"
     },
     "2026-10-13|pair=5|week=every": {
       "uid": "0fab5346d73f0c5f1eed27064ceefc07@guap-calendar-sync",
-      "status": "managed",
+      "status": "deleted_by_user",
       "managed_fingerprint": "d1b2f378bf7543070ea09b98f41f76d22f46ea0e66e7f52d7923fb7376c27d71"
     },
     "2026-10-14|pair=4|week=every": {
