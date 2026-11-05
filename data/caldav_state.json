@@ -603,12 +603,12 @@
     },
     "2026-11-05|pair=1|week=lower": {
       "uid": "ae7a4051147d9462c68adc26277e0732@guap-calendar-sync",
-      "status": "managed",
+      "status": "deleted_by_user",
       "managed_fingerprint": "0ce70c3a998a92f44cec63a2558f08c0d3ae0a6cdaa90573bdadd69a2e431111"
     },
     "2026-11-05|pair=2|week=lower": {
       "uid": "57ea12482da51b80db13e98d0c607d75@guap-calendar-sync",
-      "status": "managed",
+      "status": "deleted_by_user",
       "managed_fingerprint": "d7f193eccd105001046bd1d4c7b56adb78d99a3b241db8d2210686b094598a40"
     },
     "2026-11-05|pair=4|week=every": {
