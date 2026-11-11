@@ -683,7 +683,7 @@
     },
     "2026-11-12|pair=4|week=every": {
       "uid": "d0e4ab502db06d452d48b924979ebd9b@guap-calendar-sync",
-      "status": "managed",
+      "status": "deleted_by_user",
       "managed_fingerprint": "ed43c487302c69c31d81c12c25c835ca9a68ba6566836142086fb481f2e9a875"
     },
     "2026-11-12|pair=5|week=every": {
