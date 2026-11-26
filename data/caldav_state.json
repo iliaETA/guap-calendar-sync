@@ -813,12 +813,12 @@
     },
     "2026-11-26|pair=4|week=every": {
       "uid": "e46ef94517682f137d0624d1b4630466@guap-calendar-sync",
-      "status": "managed",
+      "status": "deleted_by_user",
       "managed_fingerprint": "7b29d1d062c756eadfeadaf67e54d600e042acffd5f3324d218eeef3c89f107b"
     },
     "2026-11-26|pair=5|week=every": {
       "uid": "21b7efdcd86dacda1631b27288ef54fc@guap-calendar-sync",
-      "status": "managed",
+      "status": "deleted_by_user",
       "managed_fingerprint": "f9106135be4f9032521a58946d0f33859ee1c2c900bd3d84ced66523c54b5b9a"
     },
     "2026-11-28|pair=2|week=upper": {
